@@ -1,0 +1,79 @@
+menu-settings:
+
+  name: '&8Торговец'
+
+  rows: 6
+
+
+block_1:
+  COMMAND: 'console: give {player} 22 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_mine.yml'
+  PRICE: 1000
+  NAME: '&7Блок лазурита: 1 шт.'
+  LORE:
+    - '&7Цена: &61000 &7$'
+  ID: '22, 1'
+  POSITION-X: 1
+  POSITION-Y: 1
+
+
+block_2:
+  COMMAND: 'console: give {player} 41 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_mine.yml'
+  PRICE: 1500
+  NAME: '&7Золотой блок: 1 шт.'
+  LORE:
+    - '&7Цена: &61500 &7$'
+  ID: '41, 1'
+  POSITION-X: 2
+  POSITION-Y: 1
+
+
+block_3:
+  COMMAND: 'console: give {player} 42 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_mine.yml'
+  PRICE: 1500
+  NAME: '&7Железный блок: 1 шт.'
+  LORE:
+    - '&7Цена: &61500 &7$'
+  ID: '42, 1'
+  POSITION-X: 3
+  POSITION-Y: 1
+
+
+block_4:
+  COMMAND: 'console: give {player} 57 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_mine.yml'
+  PRICE: 12500
+  NAME: '&7Алмазный блок: 1 шт.'
+  LORE:
+    - '&7Цена: &612500 &7$'
+  ID: '57, 1'
+  POSITION-X: 4
+  POSITION-Y: 1
+
+
+block_5:
+  COMMAND: 'console: give {player} 133 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_mine.yml'
+  PRICE: 15000
+  NAME: '&7Блок изумрудов: 1 шт.'
+  LORE:
+    - '&7Цена: &615000 &7$'
+  ID: '133, 1'
+  POSITION-X: 5
+  POSITION-Y: 1
+
+
+block_6:
+  COMMAND: 'console: give {player} 173 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_mine.yml'
+  PRICE: 1000
+  NAME: '&7Угольный блок: 1 шт.'
+  LORE:
+    - '&7Цена: &61000 &7$'
+  ID: '173, 1'
+  POSITION-X: 6
+  POSITION-Y: 1
+
+
+back:
+  COMMAND: 'open:shop.yml; sound: ENTITY_ARROW_SHOOT, 3.0, 3.0'
+  NAME: '&aВернуться...'
+  ID: 381
+  POSITION-X: 5
+  POSITION-Y: 6

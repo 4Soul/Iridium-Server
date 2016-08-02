@@ -1,0 +1,145 @@
+menu-settings:
+
+  name: '&8Торговец'
+
+  rows: 6
+
+
+block_1:
+  COMMAND: 'console: give {player} 2256 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_music.yml'
+  PRICE: 75
+  NAME: '&7C418 - 13: 1 шт.'
+  LORE:
+    - '&7Цена: &675 &7$'
+  ID: '2256, 1'
+  POSITION-X: 1
+  POSITION-Y: 1
+
+
+block_2:
+  COMMAND: 'console: give {player} 2257 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_music.yml'
+  PRICE: 75
+  NAME: '&7C418 - cat: 1 шт.'
+  LORE:
+    - '&7Цена: &675 &7$'
+  ID: '2257, 1'
+  POSITION-X: 2
+  POSITION-Y: 1
+
+
+block_3:
+  COMMAND: 'console: give {player} 2258 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_music.yml'
+  PRICE: 75
+  NAME: '&7C418 - blocks: 1 шт.'
+  LORE:
+    - '&7Цена: &675 &7$'
+  ID: '2258, 1'
+  POSITION-X: 3
+  POSITION-Y: 1
+
+
+block_4:
+  COMMAND: 'console: give {player} 2259 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_music.yml'
+  PRICE: 75
+  NAME: '&7C418 - chirp: 1 шт.'
+  LORE:
+    - '&7Цена: &675 &7$'
+  ID: '2259, 1'
+  POSITION-X: 4
+  POSITION-Y: 1
+
+
+block_5:
+  COMMAND: 'console: give {player} 2260 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_music.yml'
+  PRICE: 75
+  NAME: '&7C418 - far: 1 шт.'
+  LORE:
+    - '&7Цена: &675 &7$'
+  ID: '2260, 1'
+  POSITION-X: 5
+  POSITION-Y: 1
+
+
+block_6:
+  COMMAND: 'console: give {player} 2261 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_music.yml'
+  PRICE: 75
+  NAME: '&7C418 - mall: 1 шт.'
+  LORE:
+    - '&7Цена: &675 &7$'
+  ID: '2261, 1'
+  POSITION-X: 6
+  POSITION-Y: 1
+
+
+block_7:
+  COMMAND: 'console: give {player} 2262 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_music.yml'
+  PRICE: 75
+  NAME: '&7C418 - mellohi: 1 шт.'
+  LORE:
+    - '&7Цена: &675 &7$'
+  ID: '2262, 1'
+  POSITION-X: 7
+  POSITION-Y: 1
+
+
+block_8:
+  COMMAND: 'console: give {player} 2263 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_music.yml'
+  PRICE: 75
+  NAME: '&7C418 - stal: 1 шт.'
+  LORE:
+    - '&7Цена: &675 &7$'
+  ID: '2263, 1'
+  POSITION-X: 8
+  POSITION-Y: 1
+
+
+block_9:
+  COMMAND: 'console: give {player} 2264 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_music.yml'
+  PRICE: 75
+  NAME: '&7C418 - strad: 1 шт.'
+  LORE:
+    - '&7Цена: &675 &7$'
+  ID: '2264, 1'
+  POSITION-X: 9
+  POSITION-Y: 1
+
+
+block_10:
+  COMMAND: 'console: give {player} 2265 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_music.yml'
+  PRICE: 75
+  NAME: '&7C418 - ward: 1 шт.'
+  LORE:
+    - '&7Цена: &675 &7$'
+  ID: '2265, 1'
+  POSITION-X: 1
+  POSITION-Y: 2
+
+
+block_11:
+  COMMAND: 'console: give {player} 2266 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_music.yml'
+  PRICE: 75
+  NAME: '&7C418 - 11: 1 шт.'
+  LORE:
+    - '&7Цена: &675 &7$'
+  ID: '2266, 1'
+  POSITION-X: 2
+  POSITION-Y: 2
+
+
+block_12:
+  COMMAND: 'console: give {player} 2267 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_music.yml'
+  PRICE: 75
+  NAME: '&7C418 - wait: 1 шт.'
+  LORE:
+    - '&7Цена: &675 &7$'
+  ID: '2267, 1'
+  POSITION-X: 3
+  POSITION-Y: 2
+
+
+back:
+  COMMAND: 'open:shop.yml; sound: ENTITY_ARROW_SHOOT, 3.0, 3.0'
+  NAME: '&aВернуться...'
+  ID: 381
+  POSITION-X: 5
+  POSITION-Y: 6

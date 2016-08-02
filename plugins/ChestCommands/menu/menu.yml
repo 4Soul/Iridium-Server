@@ -1,0 +1,240 @@
+﻿######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '                 &0&nМеню'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 3
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu; m; me')
+  command: 'menu; m; меню'
+
+  # This command command will be execute when the menu is opened.
+  # Supports all the icon command types.
+  open-action: ''
+
+  # open-with-item - OPTIONAL
+  # The menu will open only right-clicking with orange wool [35:1]
+  open-with-item:
+    id: 296
+    left-click: false
+    right-click: true
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+  
+1:
+  COMMAND: 'rp'
+  ENCHANTMENT: 'fire aspect, 1'
+  NAME: '&c&l✦ &6&lРандомный телепорт &c&l✦'
+  ID: 347
+  POSITION-X: 1
+  POSITION-Y: 1
+2:
+  COMMAND: 'spawn'
+  ENCHANTMENT: 'fire aspect, 1'
+  NAME: '&c&l✦ &6&lНа спавн &c&l✦'
+  ID: 345
+  POSITION-X: 8
+  POSITION-Y: 2
+3:
+  COMMAND: 'home'
+  ENCHANTMENT: 'fire aspect, 1'
+  NAME: '&c&l✦ &6&lДомой &c&l✦'
+  ID: 355
+  POSITION-X: 2
+  POSITION-Y: 2
+4:
+  COMMAND: 'open: shop.yml'
+  ENCHANTMENT: 'fire aspect, 1'
+  NAME: '&c&l✦ &6&lМагазин &c&l✦'
+  ID: 130
+  POSITION-X: 4
+  POSITION-Y: 3
+5:
+  COMMAND: 'open: donate.yml'
+  ENCHANTMENT: 'fire aspect, 1'
+  NAME: '&c&l✦✦✦ &b&lДонат привилегии &c&l✦✦✦'
+  ID: 399
+  POSITION-X: 5
+  POSITION-Y: 2
+6:
+  COMMAND: 'warp pvp'
+  ENCHANTMENT: 'fire aspect, 1'
+  NAME: '&c&l✦ &6&lPVP-Arena &c&l✦'
+  ID: 276
+  POSITION-X: 4
+  POSITION-Y: 1
+7:
+  COMMAND: 'rules'
+  ENCHANTMENT: 'fire aspect, 1'
+  NAME: '&c&l✦ &6&lПравила &c&l✦'
+  ID: 386
+  POSITION-X: 6
+  POSITION-Y: 3
+8:
+  NAME: '&c&l✦ &6&lИнформация &c&l✦'
+  ENCHANTMENT: 'fire aspect, 1'
+  LORE:
+    - '&6Стартовый набор: &7/kit start'
+    - '&6Покупка доната на сайте: &7http://iridium-mc.ga'
+  ID: 340
+  POSITION-X: 6
+  POSITION-Y: 1
+9:
+  COMMAND: 'rp'
+  ENCHANTMENT: 'fire aspect, 1'
+  NAME: '&c&l✦ &6&lРандомный телепорт &c&l✦'
+  ID: 347
+  POSITION-X: 9
+  POSITION-Y: 1
+10:
+  COMMAND: 'rp'
+  ENCHANTMENT: 'fire aspect, 1'
+  NAME: '&c&l✦ &6&lРандомный телепорт &c&l✦'
+  ID: 347
+  POSITION-X: 1
+  POSITION-Y: 3
+11:
+  COMMAND: 'rp'
+  ENCHANTMENT: 'fire aspect, 1'
+  NAME: '&c&l✦ &6&lРандомный телепорт &c&l✦'
+  ID: 347
+  POSITION-X: 9
+  POSITION-Y: 3
+12:
+  COMMAND: ''
+  ENCHANTMENT: 'fire aspect, 1'
+  NAME: '&c&l✦ &6&lВыйти из меню &c&l✦'
+  ID: stained_glass_pane:15
+  POSITION-X: 2
+  POSITION-Y: 1
+13:
+  COMMAND: ''
+  ENCHANTMENT: 'fire aspect, 1'
+  NAME: '&c&l✦ &6&lВыйти из меню &c&l✦'
+  ID: stained_glass_pane:15
+  POSITION-X: 2
+  POSITION-Y: 3
+14:
+  COMMAND: ''
+  ENCHANTMENT: 'fire aspect, 1'
+  NAME: '&c&l✦ &6&lВыйти из меню &c&l✦'
+  ID: stained_glass_pane:15
+  POSITION-X: 1
+  POSITION-Y: 2
+15:
+  COMMAND: ''
+  ENCHANTMENT: 'fire aspect, 1'
+  NAME: '&c&l✦ &6&lВыйти из меню &c&l✦'
+  ID: stained_glass_pane:15
+  POSITION-X: 8
+  POSITION-Y: 1
+16:
+  COMMAND: ''
+  ENCHANTMENT: 'fire aspect, 1'
+  NAME: '&c&l✦ &6&lВыйти из меню &c&l✦'
+  ID: stained_glass_pane:15
+  POSITION-X: 8
+  POSITION-Y: 3
+17:
+  COMMAND: ''
+  ENCHANTMENT: 'fire aspect, 1'
+  NAME: '&c&l✦ &6&lВыйти из меню &c&l✦'
+  ID: stained_glass_pane:15
+  POSITION-X: 9
+  POSITION-Y: 2
+18:
+  COMMAND: ''
+  ENCHANTMENT: 'fire aspect, 1'
+  NAME: '&c&l✦ &6&lВыйти из меню &c&l✦'
+  ID: stained_glass_pane:15
+  POSITION-X: 3
+  POSITION-Y: 1
+19:
+  COMMAND: 'marry'
+  NAME: '&4[**] &dСвадьбы &4[**]'
+  LORE:
+    - '&f&l› &6/marry divorce &7- подать на развод'
+    - '&f&l› &6/marry tp &7- телепортация к партнеру'
+    - '&f&l› &6/marry list &7- список игроков в браке'
+    - '&f&l› &6/marry delhome &7- удалить точку дома'
+    - '&f&l› &6/marry sethome &7- поставить точку дома'
+    - '&f&l› &6/marry gender <male-(М), female-(Ж)> &7- указать пол'
+    - '&f&l› &6/marry chat &7- личная переписка с партнером'
+    - '&f&l› &6/marry <игрок> &7- сделать предложение игроку'
+    - '&f&l› &6/marry home &7- телепортароваться в точку дома'
+  ID: dye:1
+  ENCHANTMENT: 'fire aspect, 1'
+  KEEP-OPEN: false
+  POSITION-X: 5
+  POSITION-Y: 1
+20:
+  COMMAND: ''
+  ENCHANTMENT: 'fire aspect, 1'
+  NAME: '&c&l✦ &6&lВыйти из меню &c&l✦'
+  ID: stained_glass_pane:15
+  POSITION-X: 3
+  POSITION-Y: 2
+21:
+  COMMAND: ''
+  ENCHANTMENT: 'fire aspect, 1'
+  NAME: '&c&l✦ &6&lВыйти из меню &c&l✦'
+  ID: stained_glass_pane:15
+  POSITION-X: 4
+  POSITION-Y: 2
+22:
+  COMMAND: ''
+  ENCHANTMENT: 'fire aspect, 1'
+  NAME: '&c&l✦ &6&lВыйти из меню &c&l✦'
+  ID: stained_glass_pane:15
+  POSITION-X: 6
+  POSITION-Y: 2
+23:
+  COMMAND: ''
+  ENCHANTMENT: 'fire aspect, 1'
+  NAME: '&c&l✦ &6&lВыйти из меню &c&l✦'
+  ID: stained_glass_pane:15
+  POSITION-X: 7
+  POSITION-Y: 2
+24:
+  COMMAND: ''
+  ENCHANTMENT: 'fire aspect, 1'
+  NAME: '&c&l✦ &6&lВыйти из меню &c&l✦'
+  ID: stained_glass_pane:15
+  POSITION-X: 3
+  POSITION-Y: 3
+25:
+  COMMAND: 'jobs browse'
+  ENCHANTMENT: 'fire aspect, 1'
+  NAME: '&c&l✦ &6&lРаботы &c&l✦'
+  ID: 257
+  POSITION-X: 5
+  POSITION-Y: 3
+  KEEP-OPEN: true
+26:
+  COMMAND: ''
+  ENCHANTMENT: 'fire aspect, 1'
+  NAME: '&c&l✦ &6&lВыйти из меню &c&l✦'
+  ID: stained_glass_pane:15
+  POSITION-X: 7
+  POSITION-Y: 3
+27:
+  COMMAND: ''
+  ENCHANTMENT: 'fire aspect, 1'
+  NAME: '&c&l✦ &6&lВыйти из меню &c&l✦'
+  ID: stained_glass_pane:15
+  POSITION-X: 7
+  POSITION-Y: 1

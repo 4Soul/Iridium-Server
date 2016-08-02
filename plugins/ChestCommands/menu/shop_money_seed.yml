@@ -1,0 +1,90 @@
+menu-settings:
+
+  name: '&8Торговец'
+
+  rows: 6
+
+
+block_1:
+  COMMAND: 'console: give {player} 391 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_seed.yml'
+  PRICE: 20
+  NAME: '&7Морковь: 8 шт.'
+  LORE:
+    - '&7Цена: &620 &7$'
+  ID: '391, 8'
+  POSITION-X: 1
+  POSITION-Y: 1
+
+
+block_2:
+  COMMAND: 'console: give {player} 392 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_seed.yml'
+  PRICE: 20
+  NAME: '&7Картофель: 8 шт.'
+  LORE:
+    - '&7Цена: &620 &7$'
+  ID: '392, 8'
+  POSITION-X: 2
+  POSITION-Y: 1
+
+
+block_3:
+  COMMAND: 'console: give {player} 295 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_seed.yml'
+  PRICE: 10
+  NAME: '&7Семена пшеницы: 8 шт.'
+  LORE:
+    - '&7Цена: &610 &7$'
+  ID: '295, 8'
+  POSITION-X: 3
+  POSITION-Y: 1
+
+
+block_4:
+  COMMAND: 'console: give {player} 338 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_seed.yml'
+  PRICE: 25
+  NAME: '&7Сахарный тросник: 8 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: '338, 8'
+  POSITION-X: 4
+  POSITION-Y: 1
+
+
+block_5:
+  COMMAND: 'console: give {player} 351:3 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_seed.yml'
+  PRICE: 35
+  NAME: '&7Какао-бобы: 8 шт.'
+  LORE:
+    - '&7Цена: &635 &7$'
+  ID: '351:3, 8'
+  POSITION-X: 5
+  POSITION-Y: 1
+
+
+block_6:
+  COMMAND: 'console: give {player} 361 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_seed.yml'
+  PRICE: 35
+  NAME: '&7Семена тыквы: 8 шт.'
+  LORE:
+    - '&7Цена: &635 &7$'
+  ID: '361, 8'
+  POSITION-X: 6
+  POSITION-Y: 1
+
+
+block_7:
+  COMMAND: 'console: give {player} 362 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_seed.yml'
+  PRICE: 35
+  NAME: '&7Семена арбуза: 8 шт.'
+  LORE:
+    - '&7Цена: &635 &7$'
+  ID: '362, 8'
+  POSITION-X: 7
+  POSITION-Y: 1
+
+
+back:
+  COMMAND: 'open:shop.yml; sound: ENTITY_ARROW_SHOOT, 3.0, 3.0'
+  NAME: '&aВернуться...'
+  ID: 381
+  POSITION-X: 5
+  POSITION-Y: 6

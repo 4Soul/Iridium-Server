@@ -1,0 +1,33 @@
+CTSNC:
+  CHAT:
+    BlockChat: false
+    Anti-Cap:
+      Enabled: false
+      Caps-Percentage: 25
+      Minimum-Mgs-Lenght: 4
+      Uppercase-Characters: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    ChatClearMessage:
+      Enabled: false
+      Content: '&cThe chat was cleared by &6[DN]!'
+    ChatClear:
+      Size: 60
+    ChatReplaceVariable: false
+    ChatEmojis: false
+    CustomChatFormat: false
+    CustomChatName: false
+    ChatFormat: '%1$s &7<9> &f%2$s'
+    StaffChatFormat: '[DN] &8<9> &f'
+    WordBlacklistSupport: false
+    WordNotAllowedMessage: '&c&l<11> This word is not allowed! <11>'
+    WordBlacklist:
+    - fuck
+    - h a x
+    - hacks
+    - eZ
+    - hax
+    - bitch
+    - easy
+    - biatch
+    - hacker
+    - get wrecked
+    - L2P

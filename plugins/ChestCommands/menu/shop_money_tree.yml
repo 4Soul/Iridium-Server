@@ -1,0 +1,79 @@
+menu-settings:
+
+  name: '&8Торговец'
+
+  rows: 6
+
+
+block_1:
+  COMMAND: 'console: give {player} 17 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_tree.yml'
+  PRICE: 30
+  NAME: '&7Дуб: 16 шт.'
+  LORE:
+    - '&7Цена: &630 &7$'
+  ID: '17, 16'
+  POSITION-X: 1
+  POSITION-Y: 1
+
+
+block_2:
+  COMMAND: 'console: give {player} log:1 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_tree.yml'
+  PRICE: 30
+  NAME: '&7Ель: 16 шт.'
+  LORE:
+    - '&7Цена: &630 &7$'
+  ID: 'log:1, 16'
+  POSITION-X: 2
+  POSITION-Y: 1
+
+
+block_3:
+  COMMAND: 'console: give {player} log:2 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_tree.yml'
+  PRICE: 30
+  NAME: '&7Берёза: 16 шт.'
+  LORE:
+    - '&7Цена: &630 &7$'
+  ID: 'log:2, 16'
+  POSITION-X: 3
+  POSITION-Y: 1
+
+
+block_4:
+  COMMAND: 'console: give {player} log:3 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_tree.yml'
+  PRICE: 30
+  NAME: '&7Тропическое дерево: 16 шт.'
+  LORE:
+    - '&7Цена: &630 &7$'
+  ID: 'log:3, 16'
+  POSITION-X: 4
+  POSITION-Y: 1
+
+
+block_5:
+  COMMAND: 'console: give {player} 162 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_tree.yml'
+  PRICE: 30
+  NAME: '&7Древесина акации: 16 шт.'
+  LORE:
+    - '&7Цена: &630 &7$'
+  ID: '162, 16'
+  POSITION-X: 5
+  POSITION-Y: 1
+
+
+block_6:
+  COMMAND: 'console: give {player} log2:1 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_tree.yml'
+  PRICE: 30
+  NAME: '&7Древесина тёмного дуба: 16 шт.'
+  LORE:
+    - '&7Цена: &630 &7$'
+  ID: 'log2:1, 16'
+  POSITION-X: 6
+  POSITION-Y: 1
+
+
+back:
+  COMMAND: 'open:shop.yml; sound: ENTITY_ARROW_SHOOT, 3.0, 3.0'
+  NAME: '&aВернуться...'
+  ID: 381
+  POSITION-X: 5
+  POSITION-Y: 6

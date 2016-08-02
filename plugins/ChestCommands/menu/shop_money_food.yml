@@ -1,0 +1,79 @@
+menu-settings:
+
+  name: '&8Торговец'
+
+  rows: 6
+
+
+block_1:
+  COMMAND: 'console: give {player} 260 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_food.yml'
+  PRICE: 10
+  NAME: '&7Яблоко: 8 шт.'
+  LORE:
+    - '&7Цена: &610 &7$'
+  ID: '260, 8'
+  POSITION-X: 1
+  POSITION-Y: 1
+
+
+block_2:
+  COMMAND: 'console: give {player} 297 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_food.yml'
+  PRICE: 10
+  NAME: '&7Хлеб: 8 шт.'
+  LORE:
+    - '&7Цена: &610 &7$'
+  ID: '297, 8'
+  POSITION-X: 2
+  POSITION-Y: 1
+
+
+block_3:
+  COMMAND: 'console: give {player} 320 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_food.yml'
+  PRICE: 15
+  NAME: '&7Жареная свинина: 8 шт.'
+  LORE:
+    - '&7Цена: &615 &7$'
+  ID: '320, 8'
+  POSITION-X: 3
+  POSITION-Y: 1
+
+
+block_4:
+  COMMAND: 'console: give {player} 364 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_food.yml'
+  PRICE: 15
+  NAME: '&7Стейк: 8 шт.'
+  LORE:
+    - '&7Цена: &615 &7$'
+  ID: '364, 8'
+  POSITION-X: 4
+  POSITION-Y: 1
+
+
+block_5:
+  COMMAND: 'console: give {player} 412 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_food.yml'
+  PRICE: 5
+  NAME: '&7Жареная крольчатина: 1 шт.'
+  LORE:
+    - '&7Цена: &65 &7$'
+  ID: '412, 1'
+  POSITION-X: 5
+  POSITION-Y: 1
+
+
+block_6:
+  COMMAND: 'console: give {player} 424 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_food.yml'
+  PRICE: 5
+  NAME: '&7Жареная баранина: 1 шт.'
+  LORE:
+    - '&7Цена: &65 &7$'
+  ID: '424, 1'
+  POSITION-X: 6
+  POSITION-Y: 1
+
+
+back:
+  COMMAND: 'open:shop.yml; sound: ENTITY_ARROW_SHOOT, 3.0, 3.0'
+  NAME: '&aВернуться...'
+  ID: 381
+  POSITION-X: 5
+  POSITION-Y: 6

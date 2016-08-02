@@ -1,0 +1,20 @@
+fly:
+  message: "&aНа сервер зашел &9&lFly » &c%player"
+vip:
+  message: "&aНа сервер зашел &e&lVIP » &c%player"
+prem:
+  message: "&aНа сервер зашел &6&lПремиум » &c%player"
+creat:
+  message: "&aНа сервер зашел &d&lКреатив » &c%player"
+creat+:
+  message: "&aНа сервер зашел &d&lКреатив&c&l+ » &c%player"
+moder:
+  message: "&aНа сервер зашел &2&lМодератор » &c%player"
+bog:
+  message: "&aНа сервер зашел &b&lБог » &c%player"
+admin:
+  message: "&aНа сервер зашел &c&lАдминистратор » &c%player"
+gladmin:
+  message: "&aНа сервер зашел &c&lГлав.Администратор » &c%player"
+glav:
+  message: "&aНа сервер зашел &c&lГлав.Администратор » &c%player"

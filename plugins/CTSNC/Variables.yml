@@ -1,0 +1,15 @@
+CTSNC:
+  VARIABLES:
+    PlayerPoints: false
+    PointsAPI: false
+    PermissionEx: true
+    GroupManager: false
+    PlaceholderAPI: false
+    MVdWPlaceholderAPI: false
+    TokenManager: false
+    JobsReborn: true
+    RPGPlayerLeveling: false
+    ASkyBlock: false
+    Vault: true
+    TPS: false
+    Emojis: false

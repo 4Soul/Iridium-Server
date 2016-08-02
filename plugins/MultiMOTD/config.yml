@@ -1,0 +1,17 @@
+uniquePlayers: 1
+lastLogin: 4Soul
+lastLoginDisplay: 4Soul
+enableMOTD: true
+randomMOTD: true
+MOTD:
+- '&c&l▁▂▃▄▅▆▇◤ &b&lIridium &c&l◥▇▆▅▄▃▂▁%n%&6&lOnline-Shop: &eiridium-mc.ga &0| &6&lVK:
+  &evk.com/iridium_mc'
+enableLoginMOTD: false
+randomLoginMOTD: false
+delayLoginMOTD: 0
+loginMOTD:
+- '&4MultiMOTD is working but no Login MOTD has been set, please set one!'
+- '&4No Login MOTD has been set for MultiMOTD!'
+- '&bWelcome &9%player_name%&b, %n%&bThere are currently &9%players%&b/&9%maxplayers%
+  &bplayers online!'
+- '&4MultiMOTD, made by CraigEge'

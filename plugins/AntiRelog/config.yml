@@ -1,0 +1,37 @@
+#Время пвп-режима
+pvptime: 7
+#Время перезарядки золотого яблока
+apple-cd: 40
+Boolean:
+  #true - да, false - нет
+  #Включить ли перезарядку золотого яблока?
+  enable-apple-cooldown: true
+  #Проверять ли игроков на fly, gamemode, god, vanish?
+  enable-checks: true
+  #Убивать ли игрока если он вышел во время ПВП? 
+  kill-on-leave: true
+  #Убивать ли игрока если он написал команду?
+  kill-on-command: false
+  #Убирать сообщения о смерти?
+  remove-death-message: true
+  #Убирать сообщения о кике игрока?
+  remove-kick-message: true
+  #Убирать сообщения о выходе игрока?
+  remove-leave-message: true
+  #Убирать сообщения о заходе игрока?
+  remove-join-message: true
+Messages:
+  action: "&6&lВы находитесь в режиме &c&lPVP&6&l, не выходите из игры! %time%"
+  actionleave: "&e&lPVP окончено, Вы снова можете использовать команды и выходить из игры!"
+  title: "&c&lВы вошли в PVP режим!"
+  titleleave: "&c&lВы вышли из режима PvP"
+  message: "&6&lAntiRelog  » &e&lВы вошли в режим &c&lPVP! &e&lНе выходите из игры и не используйте команды!"
+  messageleave: "&6&lAntiRelog » &e&lВы вышли из режима &c&lPVP! &e&lВы снова можете использовать команды и выходить из игры!"
+  nochat: "&e&lВы не можете использовать команды в &c&lPvP&e&l. %time%."
+  apple: "&6&lAntiRelog » %time% перед следующим использованием золотого яблока!"
+  flyon: "&cВыключите флай для атаки игроков"
+  godon: "&cВыключите год для атаки игроков"
+  gamemodeon: "&cВыключите креатив для атаки игроков"
+  vanishon: "&cВыключите невидимость для атаки игроков"
+  pvpleave: "&e%player% &aПокинул игру во время ПВП и был наказан"
+  commandkill: "&aВы были убиты, т.к пытались использовать команду во время &cPVP"

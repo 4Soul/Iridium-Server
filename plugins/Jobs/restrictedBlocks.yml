@@ -1,0 +1,68 @@
+# All block to be protected from place/break exploit.
+# This will prevent piston moving all blocks in list
+# Dont count in vegetables or any single click break blocks
+restrictedblocks:
+- '14'
+- '15'
+- '16'
+- '21'
+- '48'
+- '56'
+- '73'
+- '74'
+- '129'
+- '153'
+# Block protected by timer in sec
+# 141-60 means that carrot can be harvested after 60 sec (remember to use id's from placed objects, not from your inventory)
+blockstimer:
+- 2-60
+- 3-60
+- 6-60
+- 12-60
+- 18-60
+- 31-60
+- 32-60
+- 37-60
+- 38-60
+- 39-60
+- 40-60
+- 55-60
+- 59-60
+- 80-60
+- 81-60
+- 83-60
+- 103-60
+- 106-60
+- 111-60
+- 141-60
+- 142-60
+- 161-60
+- 171-60
+- 175-60
+# Block place protected by timer in sec
+# For this to work CoreProtect plugin should be installed
+PlacedBlockTimer:
+- 2
+- 3
+- 6
+- 12
+- 18
+- 31
+- 32
+- 37
+- 38
+- 39
+- 40
+- 55
+- 59
+- 80
+- 81
+- 83
+- 103
+- 106
+- 111
+- 141
+- 142
+- 161
+- 171
+- 175

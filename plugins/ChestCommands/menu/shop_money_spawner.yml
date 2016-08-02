@@ -1,0 +1,68 @@
+menu-settings:
+
+  name: '&8Торговец'
+
+  rows: 6
+
+
+block_1:
+  COMMAND: 'console: give {player} 52 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_spawner.yml'
+  PRICE: 450
+  NAME: '&7Рассадник монстров: 1 шт.'
+  LORE:
+    - '&7Цена: &6450 &7$'
+  ID: '52, 1'
+  POSITION-X: 1
+  POSITION-Y: 1
+
+
+block_2:
+  COMMAND: 'console: give {player} 383:90 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_spawner.yml'
+  PRICE: 50
+  NAME: '&7Свинья: 1 шт.'
+  LORE:
+    - '&7Цена: &650 &7$'
+  ID: '383:90, 1'
+  POSITION-X: 2
+  POSITION-Y: 1
+
+
+block_3:
+  COMMAND: 'console: give {player} 383:91 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_spawner.yml'
+  PRICE: 50
+  NAME: '&7Овца: 1 шт.'
+  LORE:
+    - '&7Цена: &650 &7$'
+  ID: '383:91, 1'
+  POSITION-X: 3
+  POSITION-Y: 1
+
+
+block_4:
+  COMMAND: 'console: give {player} 383:92 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_spawner.yml'
+  PRICE: 50
+  NAME: '&7Корова: 1 шт.'
+  LORE:
+    - '&7Цена: &650 &7$'
+  ID: '383:92, 1'
+  POSITION-X: 4
+  POSITION-Y: 1
+
+
+block_5:
+  COMMAND: 'console: give {player} 383:93 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_spawner.yml'
+  PRICE: 50
+  NAME: '&7Курица: 1 шт.'
+  LORE:
+    - '&7Цена: &650 &7$'
+  ID: '383:93, 1'
+  POSITION-X: 5
+  POSITION-Y: 1
+
+
+back:
+  COMMAND: 'open:shop.yml; sound: ENTITY_ARROW_SHOOT, 3.0, 3.0'
+  NAME: '&aВернуться...'
+  ID: 381
+  POSITION-X: 5
+  POSITION-Y: 6

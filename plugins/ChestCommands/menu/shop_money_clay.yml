@@ -1,0 +1,200 @@
+menu-settings:
+
+  name: '&8Торговец'
+
+  rows: 6
+
+
+block_1:
+  COMMAND: 'console: give {player} 159 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_clay.yml'
+  PRICE: 35
+  NAME: '&7Белая обожжёная глина: 16 шт.'
+  LORE:
+    - '&7Цена: &635 &7$'
+  ID: '159, 16'
+  POSITION-X: 1
+  POSITION-Y: 1
+
+
+block_2:
+  COMMAND: 'console: give {player} 159:1 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_clay.yml'
+  PRICE: 35
+  NAME: '&7Оранжевая обожжёная глина: 16 шт.'
+  LORE:
+    - '&7Цена: &635 &7$'
+  ID: '159:1, 16'
+  POSITION-X: 2
+  POSITION-Y: 1
+
+
+block_3:
+  COMMAND: 'console: give {player} 159:2 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_clay.yml'
+  PRICE: 35
+  NAME: '&7Пурпурная обожжёная глина: 16 шт.'
+  LORE:
+    - '&7Цена: &635 &7$'
+  ID: '159:2, 16'
+  POSITION-X: 3
+  POSITION-Y: 1
+
+
+block_4:
+  COMMAND: 'console: give {player} 159:3 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_clay.yml'
+  PRICE: 35
+  NAME: '&7Голубая обожжёная глина: 16 шт.'
+  LORE:
+    - '&7Цена: &635 &7$'
+  ID: '159:3, 16'
+  POSITION-X: 4
+  POSITION-Y: 1
+
+
+block_5:
+  COMMAND: 'console: give {player} 159:4 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_clay.yml'
+  PRICE: 35
+  NAME: '&7Жёлтая обожжёная глина: 16 шт.'
+  LORE:
+    - '&7Цена: &635 &7$'
+  ID: '159:4, 16'
+  POSITION-X: 5
+  POSITION-Y: 1
+
+
+block_6:
+  COMMAND: 'console: give {player} 159:5 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_clay.yml'
+  PRICE: 35
+  NAME: '&7Лаймовая обожжёная глина: 16 шт.'
+  LORE:
+    - '&7Цена: &635 &7$'
+  ID: '159:5, 16'
+  POSITION-X: 6
+  POSITION-Y: 1
+
+
+block_7:
+  COMMAND: 'console: give {player} 159:6 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_clay.yml'
+  PRICE: 35
+  NAME: '&7Розовая обожжёная глина: 16 шт.'
+  LORE:
+    - '&7Цена: &635 &7$'
+  ID: '159:6, 16'
+  POSITION-X: 7
+  POSITION-Y: 1
+
+
+block_8:
+  COMMAND: 'console: give {player} 159:7 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_clay.yml'
+  PRICE: 35
+  NAME: '&7Серая обожжёная глина: 16 шт.'
+  LORE:
+    - '&7Цена: &635 &7$'
+  ID: '159:7, 16'
+  POSITION-X: 8
+  POSITION-Y: 1
+
+
+block_9:
+  COMMAND: 'console: give {player} 159:8 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_clay.yml'
+  PRICE: 35
+  NAME: '&7Светло-серая обожжёная глина: 16 шт.'
+  LORE:
+    - '&7Цена: &635 &7$'
+  ID: '159:8, 16'
+  POSITION-X: 9
+  POSITION-Y: 1
+
+
+block_10:
+  COMMAND: 'console: give {player} 159:9 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_clay.yml'
+  PRICE: 35
+  NAME: '&7Бирюзовая обожжёная глина: 16 шт.'
+  LORE:
+    - '&7Цена: &635 &7$'
+  ID: '159:9, 16'
+  POSITION-X: 1
+  POSITION-Y: 2
+
+
+block_11:
+  COMMAND: 'console: give {player} 159:10 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_clay.yml'
+  PRICE: 35
+  NAME: '&7Фиолетовая обожжёная глина: 16 шт.'
+  LORE:
+    - '&7Цена: &635 &7$'
+  ID: '159:10, 16'
+  POSITION-X: 2
+  POSITION-Y: 2
+
+
+block_12:
+  COMMAND: 'console: give {player} 159:11 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_clay.yml'
+  PRICE: 35
+  NAME: '&7Синяя обожжёная глина: 16 шт.'
+  LORE:
+    - '&7Цена: &635 &7$'
+  ID: '159:11, 16'
+  POSITION-X: 3
+  POSITION-Y: 2
+
+
+block_13:
+  COMMAND: 'console: give {player} 159:12 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_clay.yml'
+  PRICE: 35
+  NAME: '&7Коричневая обожжёная глина: 16 шт.'
+  LORE:
+    - '&7Цена: &635 &7$'
+  ID: '159:12, 16'
+  POSITION-X: 4
+  POSITION-Y: 2
+
+
+block_14:
+  COMMAND: 'console: give {player} 159:13 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_clay.yml'
+  PRICE: 35
+  NAME: '&7Зелёная обожжёная глина: 16 шт.'
+  LORE:
+    - '&7Цена: &635 &7$'
+  ID: '159:13, 16'
+  POSITION-X: 5
+  POSITION-Y: 2
+
+
+block_15:
+  COMMAND: 'console: give {player} 159:14 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_clay.yml'
+  PRICE: 35
+  NAME: '&7Красная обожжёная глина: 16 шт.'
+  LORE:
+    - '&7Цена: &635 &7$'
+  ID: '159:14, 16'
+  POSITION-X: 6
+  POSITION-Y: 2
+
+
+block_16:
+  COMMAND: 'console: give {player} 159:15 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_clay.yml'
+  PRICE: 35
+  NAME: '&7Чёрная обожжёная глина: 16 шт.'
+  LORE:
+    - '&7Цена: &635 &7$'
+  ID: '159:15, 16'
+  POSITION-X: 7
+  POSITION-Y: 2
+
+
+block_17:
+  COMMAND: 'console: give {player} 172 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_clay.yml'
+  PRICE: 35
+  NAME: '&7Обожжёная глина: 16 шт.'
+  LORE:
+    - '&7Цена: &635 &7$'
+  ID: '172, 16'
+  POSITION-X: 8
+  POSITION-Y: 2
+
+
+back:
+  COMMAND: 'open:shop.yml; sound: ENTITY_ARROW_SHOOT, 3.0, 3.0'
+  NAME: '&aВернуться...'
+  ID: 381
+  POSITION-X: 5
+  POSITION-Y: 6

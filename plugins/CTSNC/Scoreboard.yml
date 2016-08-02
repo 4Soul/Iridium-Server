@@ -1,0 +1,31 @@
+CTSNC:
+  SCOREBOARD:
+    Enabled: true
+    Scoreboard_Content_Update: 20
+    Scoreboard_Title_Update: 100
+    Header:
+    - '&4<1> IRIDIUM &4<1>'
+    - '&4<1> IRIDIUM &4<1>'
+    - '&4<1> IRIIUM &4<1>'
+    - '&4<1> IRUM &4<1>'
+    - '&4<1> IM &4<1>'
+    - '&4<1> IRUM &4<1>'
+    - '&4<1> IRIIUM &4<1>'
+    - '&4<1> IRIDIUM &4<1>'
+    - '&4<1> IRIDIUM &4<1>'
+    Content:
+    - '&1'
+    - '&8<9> &a&lДобро пожаловать:'
+    - '&8<9> &e[PN]'
+    - '&5'
+    - '&8<9> &aВаш баланс:'
+    - '&8<9> &e[CM]'
+    - '&2'
+    - '&8<9> &a&lОнлайн:'
+    - '&8<9> &e[OP]&c/&e[MAX]'
+    - '&3'
+    - '&8<9> &a&lВремя на сервере:'
+    - '&8<9> &e[ST]'
+    - '&5'
+    - '&8<9> &a&lВаш игровой режим:'
+    - '&8<9> &e[GM]'

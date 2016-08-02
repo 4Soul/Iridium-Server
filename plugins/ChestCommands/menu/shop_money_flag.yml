@@ -1,0 +1,189 @@
+menu-settings:
+
+  name: '&8Торговец'
+
+  rows: 6
+
+
+block_1:
+  COMMAND: 'console: give {player} banner:15 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_flag.yml'
+  PRICE: 05
+  NAME: '&7Белое знамя: 1 шт.'
+  LORE:
+    - '&7Цена: &6505 &7$'
+  ID: 'banner:15, 1'
+  POSITION-X: 1
+  POSITION-Y: 1
+
+
+block_2:
+  COMMAND: 'console: give {player} banner:14 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_flag.yml'
+  PRICE: 05
+  NAME: '&7Оранжевый флаг: 1 шт.'
+  LORE:
+    - '&7Цена: &6505 &7$'
+  ID: 'banner:14, 1'
+  POSITION-X: 2
+  POSITION-Y: 1
+
+
+block_3:
+  COMMAND: 'console: give {player} banner:13 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_flag.yml'
+  PRICE: 05
+  NAME: '&7Пурпурное знамя: 1 шт.'
+  LORE:
+    - '&7Цена: &6505 &7$'
+  ID: 'banner:13, 1'
+  POSITION-X: 3
+  POSITION-Y: 1
+
+
+block_4:
+  COMMAND: 'console: give {player} banner:12 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_flag.yml'
+  PRICE: 05
+  NAME: '&7Голубое знамя: 1 шт.'
+  LORE:
+    - '&7Цена: &6505 &7$'
+  ID: 'banner:12, 1'
+  POSITION-X: 4
+  POSITION-Y: 1
+
+
+block_5:
+  COMMAND: 'console: give {player} banner:11 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_flag.yml'
+  PRICE: 05
+  NAME: '&7Жёлтое знамя: 1 шт.'
+  LORE:
+    - '&7Цена: &6505 &7$'
+  ID: 'banner:11, 1'
+  POSITION-X: 5
+  POSITION-Y: 1
+
+
+block_6:
+  COMMAND: 'console: give {player} banner:10 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_flag.yml'
+  PRICE: 05
+  NAME: '&7Лаймовое знамя: 1 шт.'
+  LORE:
+    - '&7Цена: &6505 &7$'
+  ID: 'banner:10, 1'
+  POSITION-X: 6
+  POSITION-Y: 1
+
+
+block_7:
+  COMMAND: 'console: give {player} banner:9 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_flag.yml'
+  PRICE: 05
+  NAME: '&7Розовый флаг: 1 шт.'
+  LORE:
+    - '&7Цена: &6505 &7$'
+  ID: 'banner:9, 1'
+  POSITION-X: 7
+  POSITION-Y: 1
+
+
+block_8:
+  COMMAND: 'console: give {player} banner:8 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_flag.yml'
+  PRICE: 05
+  NAME: '&7Серое знамя: 1 шт.'
+  LORE:
+    - '&7Цена: &6505 &7$'
+  ID: 'banner:8, 1'
+  POSITION-X: 8
+  POSITION-Y: 1
+
+
+block_9:
+  COMMAND: 'console: give {player} banner:7 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_flag.yml'
+  PRICE: 05
+  NAME: '&7Светло-серое знамя знамя: 1 шт.'
+  LORE:
+    - '&7Цена: &6505 &7$'
+  ID: 'banner:7, 1'
+  POSITION-X: 9
+  POSITION-Y: 1
+
+
+block_10:
+  COMMAND: 'console: give {player} banner:6 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_flag.yml'
+  PRICE: 05
+  NAME: '&7Бирюзовое знамя: 1 шт.'
+  LORE:
+    - '&7Цена: &6505 &7$'
+  ID: 'banner:6, 1'
+  POSITION-X: 1
+  POSITION-Y: 2
+
+
+block_11:
+  COMMAND: 'console: give {player} banner:5 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_flag.yml'
+  PRICE: 05
+  NAME: '&7Фиолетовый флаг: 1 шт.'
+  LORE:
+    - '&7Цена: &6505 &7$'
+  ID: 'banner:5, 1'
+  POSITION-X: 2
+  POSITION-Y: 2
+
+
+block_12:
+  COMMAND: 'console: give {player} banner:4 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_flag.yml'
+  PRICE: 05
+  NAME: '&7Синее знамя: 1 шт.'
+  LORE:
+    - '&7Цена: &6505 &7$'
+  ID: 'banner:4, 1'
+  POSITION-X: 3
+  POSITION-Y: 2
+
+
+block_13:
+  COMMAND: 'console: give {player} banner:3 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_flag.yml'
+  PRICE: 05
+  NAME: '&7Коричневое знамя: 1 шт.'
+  LORE:
+    - '&7Цена: &6505 &7$'
+  ID: 'banner:3, 1'
+  POSITION-X: 4
+  POSITION-Y: 2
+
+
+block_14:
+  COMMAND: 'console: give {player} banner:2 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_flag.yml'
+  PRICE: 05
+  NAME: '&7Зелёный флаг: 1 шт.'
+  LORE:
+    - '&7Цена: &6505 &7$'
+  ID: 'banner:2, 1'
+  POSITION-X: 5
+  POSITION-Y: 2
+
+
+block_15:
+  COMMAND: 'console: give {player} banner:1 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_flag.yml'
+  PRICE: 05
+  NAME: '&7Красное знамя: 1 шт.'
+  LORE:
+    - '&7Цена: &6505 &7$'
+  ID: 'banner:1, 1'
+  POSITION-X: 6
+  POSITION-Y: 2
+
+
+block_16:
+  COMMAND: 'console: give {player} 425 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_flag.yml'
+  PRICE: 05
+  NAME: '&7Чёрное знамя: 1 шт.'
+  LORE:
+    - '&7Цена: &6505 &7$'
+  ID: '425, 1'
+  POSITION-X: 7
+  POSITION-Y: 2
+
+
+back:
+  COMMAND: 'open:shop.yml; sound: ENTITY_ARROW_SHOOT, 3.0, 3.0'
+  NAME: '&aВернуться...'
+  ID: 381
+  POSITION-X: 5
+  POSITION-Y: 6

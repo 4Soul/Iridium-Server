@@ -1,0 +1,460 @@
+economy:
+  error:
+    nomoney: Il n'y a plus d'argent dans la banque du serveur!
+limitedItem:
+  error:
+    levelup: '&cVous devez augmenter votre niveau dans le m�tier [jobname] pour utiliser
+      cet objet!'
+general:
+  info:
+    toplineseparator: '&7*********************** &6%playername% &7***********************'
+    separator: '&7*******************************************************'
+  admin:
+    error: '&cIl y a eu une erreur pendant la commande.'
+    success: '&eVotre commande a �t� ex�cut� avec succ�s.'
+  error:
+    noHelpPage: '&cIl n''y a pas de page d''aide portant ce num�ro!'
+    notNumber: '&eMerci d''utiliser des chiffres!'
+    job: '&cLe m�tier que vous avez selectionn� n''existe pas!'
+    permission: '&cVous n''avez pas la permission de faire cela!'
+    noinfo: '&cAucune information trouv�e!'
+    noinfoByPlayer: '&cAucune information trouv�e par [%playername%] nom du joueur!'
+    ingame: '&cVous ne pouvez utiliser cette commande qu''en jeu!'
+    fromconsole: '&cCette commande doit �tre lanc�e depuis la console!'
+    worldisdisabled: '&cVous ne pouvez pas utiliser cette commande dans ce monde!'
+command:
+  moneyboost:
+    help:
+      info: Booster le gain d'argent pour tous les joueurs
+      args: '[jobname] [rate]'
+    output:
+      allreset: Tous les boost d'argent ont �t� d�sactiv�s
+      jobsboostreset: Le boost d'argent pour le m�tier %jobname% a �t� d�sactiv�
+      nothingtoreset: Il n'y a rien � remettre � z�ro
+      boostalladded: Un boost d'argent de %boost% a �t� ajout� pour tous les m�tiers!
+      boostadded: Un boost d'argent de &e%boost% &aa �t� ajout� pour le m�tier &e%jobname%!
+      infostats: '&c-----> &aBoost d''argent x%boost% activ�&c <-------'
+  pointboost:
+    help:
+      info: Booster de points pour tous les joueurs
+      args: '[jobname] [rate]'
+    output:
+      allreset: Tous les boost de points ont �t� d�sactiv�s
+      jobsboostreset: Le boost de points pour le m�tier %jobname% a �t� d�sactiv�
+      nothingtoreset: Il n'y a rien a remettre � z�ro
+      boostalladded: Un boost de points de %boost% a �t� ajout� pour tous les m�tiers!
+      boostadded: Un boost de points de &e%boost% &aa �t� ajout� pour le m�tier &e%jobname%!
+      infostats: '&c-----> &aBoost de points x%boost% activ�&c <-------'
+  expboost:
+    help:
+      info: Booster d'XP pour tous les joueurs
+      args: '[jobname] [rate]'
+    output:
+      allreset: Tous les boost d'XP ont �t� d�sactiv�s
+      jobsboostreset: Le boost d'XP pour le m�tier %jobname% a �t� d�sactiv�
+      nothingtoreset: Il n'y a rien a reset
+      boostalladded: Un boost d'XP de %boost% a �t� ajout� pour tous les m�tiers!
+      boostadded: Un boost d'XP de &e%boost% &aa �t� ajout� pour le m�tier &e%jobname%!
+      infostats: '&c-----> &aBoost d''XP x%boost% activ�&c <-------'
+  bonus:
+    help:
+      info: Voir les bonus de m�tiers
+      args: '[jobname]'
+    output:
+      topline: '&7**************** &2[argent] &6[points] &e[exp] &7****************'
+      permission: ' &eBonus de permission: %money% %points% %exp%'
+      item: ' &eBonus d''Objet: %money% %points% %exp%'
+      global: ' &eBonus global: %money% %points% %exp%'
+      dynamic: ' &eBonus de paiement dynamique: %money% %points% %exp%'
+      area: ' &eBonus de zone: %money% %points% %exp%'
+      final: ' &eBonus final: %money% %points% %exp%'
+  convert:
+    help:
+      info: Converti le syst�me de la base de donn�es. Si vous utilisez SQLite, cela sera converti � MySQL et vice-versa.
+      args: ''
+  limit:
+    help:
+      info: Montre les limites des m�tiers
+      args: ''
+    output:
+      lefttime: '&eTemps restant avant la fin de la limite : &2%hour%&eh &2%min%&em
+        &2%sec%&es'
+      moneylimit: '&eLimite : &2%money%&e/&2%totalmoney%'
+      leftexptime: '&eTemps restant avant la fin de la limite d''XP: &2%hour%&eh &2%min
+        &em &2%sec%&es'
+      explimit: '&eLimite d''XP: &2%exp%&e/&2%totalexp%'
+      leftpointtime: '&eTemps restant avant la fin de la limite de points: &2%hour%&eh
+        &2%min &em &2%sec%&es'
+      pointlimit: '&eLimite de points: &2%current%&e/&2%total%'
+      reachedlimit: '&4Vous avez atteint le nombre maximum d''argent gagn� pendant
+        le temps imparti!'
+      reachedlimit2: '&eVous pouvez v�rifier votre limite avec la commande &2/jobs
+        limit'
+      reachedExplimit: '&4Vous avez atteint le nombre maximal d''XP gagn� pendant
+        le temps imparti!'
+      reachedExplimit2: '&eVous pouvez voir la limite avec la commande &2/jobs limit'
+      reachedPointlimit: '&4Vous avez atteint le nombre maximal de points gagn� pendant
+        le temps imparti!'
+      reachedPointlimit2: '&eVous pouvez voir la limite avec la commande &2/jobs limit'
+      notenabled: '&eLa limite n''est pas activ�e.'
+  help:
+    output:
+      info: Tapez /jobs [cmd] ? pour plus d''information sur une commande.
+      usage: 'Utilisation: %usage%'
+      title: '&e-------&e ======= &6M�tiers &e======= &e-------'
+      page: '&e-----&e ====== Page &6[1] &esur &6[2] &e====== &e-----'
+      prev: '&e--- <<<<< &6Page pr�c�dente &e|'
+      next: '&e|&6 Page suivante &e>>>> ---'
+  points:
+    help:
+      info: Montrer combien de points a le joueur.
+      args: '[playername]'
+    currentpoints: ' &eNombre de points actuel: &6%currentpoints%'
+    totalpoints: ' &eNombre de points total collect� : &6%totalpoints%'
+  editpoints:
+    help:
+      info: Editer le nombre de points d'un joueur.
+      args: '[set/add/take] [playername] [amount]'
+    output:
+      set: '&eLes points du joueur &6%playername%&e ont �t� mis � &6%amount%'
+      add: '&eLe joueur &6%playername% &ea re�u &6%amount% &epoints. Il a maintenant
+        &6%total%'
+      take: '&eLe joueur &6%playername% &ea perdu &6%amount% &epoints. Il a maintenant
+        &6%total%'
+  blockinfo:
+    help:
+      info: Montre les infos du bloc que vous regardez.
+      args: ''
+    output:
+      name: ' &eNom du bloc: &6%blockname%'
+      id: ' &eId du bloc: &6%blockid%'
+      data: ' &eData du bloc: &6%blockdata%'
+      usage: ' &eUtilisation: &6%first% &eou &6%second%'
+  stats:
+    help:
+      info: Donne votre niveau dans chacun de vos m�tiers.
+      args: '[playername]'
+    error:
+      nojob: Vous n''avez pas de m�tier.
+    output: 'lvl%joblevel% %jobname% : %jobxp%/%jobmaxxp% xp'
+  shop:
+    help:
+      info: Ouvrir les magasins sp�ciaux de m�tiers.
+      args: ''
+    info:
+      title: '&e------- &8Magasin de m�tier &e-------'
+      currentPoints: '&eVous avez: &6%currentpoints%'
+      price: '&ePrix: &6%price%'
+      reqJobs: '&eM�tier requis:'
+      reqJobsList: '  &6%jobsname%&e: &e%level% lvl'
+      cantOpen: '&cCan''t open this page'
+      NoPermForItem: '&cVous n''avez pas la permission requise pour utiliser cet objet!'
+      NoPermToBuy: '&cVous n''avez pas la permission requise pour acheter cet objet!'
+      NoJobReqForitem: '&cVous n''avez pas le m�tier requis (&6%jobname%&e) qui n�c�ssite
+        (&6%joblevel%&e) level'
+      NoPoints: '&cVous n''avez pas assez de points'
+      Paid: '&eVous avez pay� &6%amount% &epour cet objet'
+  archive:
+    help:
+      info: Donne tous les m�tiers en archive par joueur.
+      args: '[playername]'
+    error:
+      nojob: Il n''y a aucun m�tier en archive.
+    output: lvl %joblevel% (%getbackjoblevel%) %jobname%
+  give:
+    help:
+      info: Donne un objet par nom de m�tier et nom de cat�gorie d''objet. Le pseudo est facultatif.
+      args: '[Nom du joueur] [M�tier] [Item]'
+    output:
+      notonline: '&4[%playername%] est hors-ligne !'
+      noitem: '&4Ce nom ne correspond � aucun objet !'
+  info:
+    help:
+      title: '&2*** &eM�tier&2 ***'
+      info: Donne combien est pay� chaque m�tier et pour quoi.
+      penalty: '&eCe m�tier � &c[penalty]% &ede p�nalit� car il a trop de succ�s.'
+      bonus: '&eCe m�tier � &2[bonus]% &ede bonus car il est vraiment d�laiss�.'
+      args: '[m�tier] [action]'
+      actions: '&eLes actions possibles sont: &f%actions%'
+      max: ' - &eNiveau Max:&f '
+      material: '&7%material%'
+      levelRange: ' &a(&e%levelFrom% &a- &e%levelUntil% &alevels)'
+      levelFrom: ' &a(from &e%levelFrom% &alevel)'
+      levelUntil: ' &a(until &e%levelUntil% &alevel)'
+      money: ' &2%money%$'
+      points: ' &6%points%points'
+      exp: ' &e%exp%xp'
+    gui:
+      pickjob: '&eChoisissez un m�tier!'
+      jobinfo: '&e[jobname] info!'
+      actions: '&c&nActions r�mun�r�es:'
+      leftClick: '&bClic gauche pour plus d''infos'
+      rightClick: '&bClic droit pour rejoindre ce m�tier'
+      leftSlots: '&eNombre de place restante:&f '
+      working: '            &2&lVous �tes d�j� embauch�'
+      max: '&6Level Max:&f '
+      back: '&e<<< Retour'
+    output:
+      break:
+        info: Casser
+        none: '%jobname% ne donne rien en cassant des blocs.'
+      tntbreak:
+        info: TNT
+        none: '%jobname% ne donne rien en cassant des blocs avec de la TNT.'
+      place:
+        info: Placer
+        none: '%jobname% ne donne rien en pla�ant des blocs.'
+      kill:
+        info: TuerMob
+        none: '%jobname% ne donne rien en tuant.'
+      mmkill:
+        info: TuerMM
+        none: '%jobname% ne donne rien en tuant des MM mobs.'
+      fish:
+        info: P�cher
+        none: '%jobname% ne donne rien en p�chant.'
+      craft:
+        info: Crafter
+        none: '%jobname% ne donne rien en craftant.'
+      smelt:
+        info: Cuire
+        none: '%jobname% ne donne rien en faisant cuire.'
+      brew:
+        info: Infuser
+        none: '%jobname% ne donne rien en faisant infuser.'
+      eat:
+        info: Manger
+        none: '%jobname% ne donne rien en mangeant.'
+      dye:
+        info: Teindre
+        none: '%jobname% ne donne rien en teignant des objet.'
+      enchant:
+        info: Enchanter
+        none: '%jobname% ne donne rien en enchantant.'
+      repair:
+        info: R�parer
+        none: '%jobname% ne donne rien en r�parant.'
+      breed:
+        info: Nourrir
+        none: '%jobname% ne donne rien en nourrissant.'
+      tame:
+        info: Apprivoiser
+        none: '%jobname% ne donne rien en apprivoisant.'
+      milk:
+        info: Traire
+        none: '%jobname% ne donne rien lors de la traite d''une vache.'
+      shear:
+        info: Tailler
+        none: '%jobname% ne donne rien en coupant les feuillages avec une cisaille.'
+      explore:
+        info: Explorer
+        none: '%jobname% ne donne rien en explorant.'
+      custom-kill:
+        info: TuerJoueur
+        none: '%jobname% ne donne rien en tuant des joueurs particuliers.'
+  playerinfo:
+    help:
+      info: Donne le montant pay� de chaque action pour un certain m�tier sur un autre joueur.
+      args: '[playername] [jobname] [action]'
+  join:
+    help:
+      info: Exercer le m�tier.
+      args: '[jobname]'
+    error:
+      alreadyin: Vous exercez d�j� le m�tier de %jobname%.
+      fullslots: Vous ne pouvez pas devenir %jobname%, il n''y a plus de place disponible.
+      maxjobs: Vous exercez d�j� trop de m�tiers.
+    success: Vous exercez maintenant le m�tier de %jobname%.
+  leave:
+    help:
+      info: Quitter le m�tier.
+      args: '[jobname]'
+    success: Vous n'exercez plus le m�tier de %jobname%.
+  leaveall:
+    help:
+      info: Quitter tous vos m�tiers.
+    error:
+      nojobs: Vous n'exercez aucun m�tier !
+    success: Vous avez quitt� tous vos m�tiers.
+  browse:
+    help:
+      info: Donne les m�tiers que vous pourriez exercer.
+    error:
+      nojobs: Vous ne pouvez exercer aucun autre m�tier.
+    output:
+      header: 'Vous pouvez exercer les m�tiers suivants :'
+      footer: Pour plus d'informations, tapez /jobs info [JobName]
+      totalWorkers: '&6Employ�s: &f[amount]'
+      penalty: '&4Penalit�: &c[amount]%'
+      bonus: '&2Bonus: &a[amount]%'
+  fire:
+    help:
+      info: Renvoie le joueur de son m�tier.
+      args: '[playername] [jobname]'
+    error:
+      nojob: Ce joueur n'exerce pas le m�tier de %jobname%.
+    output:
+      target: Vous avez �t� renvoy� de %jobname%.
+  fireall:
+    help:
+      info: Renvoie le joueur de tous ses m�tiers.
+      args: '[playername]'
+    error:
+      nojobs: Le joueur n'a aucun m�tier !
+    output:
+      target: Vous avez �t� renvoy� de tous vos m�tiers.
+  employ:
+    help:
+      info: Embauche le joueur dans le m�tier.
+      args: '[playername] [jobname]'
+    error:
+      alreadyin: Ce joueur exerce d�j� le m�tier de %jobname%.
+    output:
+      target: Vous avez �t� embauch� pour �tre %jobname%.
+  top:
+    help:
+      info: Donne le top 10 des joueurs par m�tier.
+      args: '[jobname]'
+    error:
+      nojob: Aucun m�tier ne porte ce nom.
+    output:
+      topline: '&aTop&e 10 &ades joueurs &e%jobname%'
+      list: '&e%number%&a. &e%playername% &alvl &e%level% &aavec&e %exp%&axp'
+      prev: '&e<<<<< Page pr�c�dente &2|'
+      next: '&2|&e Page suivante >>>>'
+      show: '&2Montrer la top liste depuis &e[from] &2jusqu''a &e[until]'
+  gtop:
+    help:
+      info: Montrer les 15 meilleurs employ�s.
+      args: ''
+    error:
+      nojob: Impossible de trouver des informations.
+    output:
+      topline: '&aMontrer les 15 meilleurs employ�s par m�tier'
+      list: '&e%number%&a. &e%playername% &alvl &e%level% &aavec&e %exp%&axp'
+      prev: '&e<<<<< Page pr�c�dente &2|'
+      next: '&2|&e Page suivante >>>>'
+      show: '&2Montrer la top liste depuis &e[from] &2jusqu''a &e[until]'
+  log:
+    help:
+      info: Affiche les stats.
+      args: '[playername]'
+    output:
+      topline: '&7************************* &6%playername% &7*************************'
+      list: '&7* &6%number%. &3%action%: &6%item% &eqty: %qty% &6argent: %money%&exp:
+        %exp%'
+      bottomline: '&7***********************************************************'
+      prev: '&e<<<<< Page pr�c�dente &2|'
+      next: '&2|&e Page suivante >>>>'
+      nodata: '&cDonn�es introuvable'
+  glog:
+    help:
+      info: Affiche les stats globales.
+      args: ''
+    output:
+      topline: '&7*********************** &6Stats globales &7***********************'
+      list: '&7* &6%number%. &3%username% &e%action%: &6%item% &eqt�: %qty% &6Cubixx:
+        %money% &exp: %exp%'
+      bottomline: '&7**************************************************************'
+      nodata: '&cDonn�es introuvable'
+  transfer:
+    help:
+      info: Transf�re un joueur d'un m�tier � un autre.
+      args: '[playername] [oldjob] [newjob]'
+    output:
+      target: Vous avez �t� transf�r� de %oldjobname% � %newjobname%.
+  promote:
+    help:
+      info: Promeut le joueur de X niveau(x) dans un m�tier.
+      args: '[playername] [jobname] [levels]'
+    output:
+      target: Vous avez �t� promu de %levelsgained% niveaux en %jobname%.
+  demote:
+    help:
+      info: R�trograde le joueur de X niveaux dans un m�tier.
+      args: '[playername] [jobname] [levels]'
+    output:
+      target: Vous avez �t� r�trograd� de %levelslost% niveaux en %jobname%.
+  grantxp:
+    help:
+      info: Donne X points d'exp�rience au joueur dans un m�tier.
+      args: '[playername] [jobname] [xp]'
+    output:
+      target: Vous avez gagn� %xpgained% points d'exp�rience en %jobname%.
+  removexp:
+    help:
+      info: Enl�ve X points d'exp�rience au joueur dans un m�tier.
+      args: '[playername] [jobname] [xp]'
+    output:
+      target: Vous avez perdu %xplost% points d'exp�rience en %jobname%.
+  signupdate:
+    help:
+      info: Mettre � jour manuellement le panneau par son nom
+      args: '[jobname]'
+  reload:
+    help:
+      info: Recharge la configuration.
+  toggle:
+    help:
+      info: Changer l'affichage de paiement sur la barre d'action.
+      args: '[actionbar/bossbar]'
+    output:
+      turnedoff: '&4Cette option est d�sactiv�e !'
+      paid:
+        main: '&aVous avez:'
+        money: '&e[amount] Cubixx'
+        exp: '&7[exp] xp'
+        points: '&6[points] points'
+      'on': '&aChang�: &aON'
+      'off': '&aChang�: &4OFF'
+message:
+  skillup:
+    broadcast: '%playername% a �t� promu %titlename% %jobname%.'
+    nobroadcast: F�licitations, vous avez �t� promu %titlename% %jobname%.
+  levelup:
+    broadcast: '%playername% est maintenant au niveau %joblevel% %jobname%.'
+    nobroadcast: Vous �tes maintenant au niveau %joblevel% %jobname%.
+  cowtimer: '&eVous devez attendre &6%time% &esec avant d''�tre pay� pour ce m�tier.'
+  blocktimer: '&eVous devez attendre: &3[time] &esec encore pour �tre pay� pour cela!'
+  placeblocktimer: '&eVous ne pouvez placer des blocs que toutes les &6[time] &esec
+    d''intervale au m�me endroit!'
+  taxes: '&3[amount] &edes taxes du serveur ont �t� transf�r�es sur ce compte'
+  boostStarted: '&eLe boost m�tier a commenc�!'
+  boostStoped: '&eLe boost m�tier est termin�!'
+  crafting:
+    fullinventory: Votre inventaire est plein !
+signs:
+  List: '&0[number].&8[player]&7:&4[level]'
+  SpecialList:
+    '1':
+      '1': '&b*** &81er &b***'
+      '2': '&9[player]'
+      '3': '&8Level [level]'
+      '4': '&b************'
+    '2':
+      '1': '&b*** &82nd &b***'
+      '2': '&9[player]'
+      '3': '&8Level [level]'
+      '4': '&b************'
+    '3':
+      '1': '&b** &83�me &b**'
+      '2': '&9[player]'
+      '3': '&8Level [level]'
+      '4': '&b************'
+  cantcreate: '&4Vous ne pouvez pas cr�er ce panneau !'
+  cantdestroy: '&4Vous ne pouvez pas d�truire ce panneau!'
+  topline: '&e[Jobs]'
+  secondline:
+    join: '&2Rejoindre'
+    leave: '&4Quitter'
+    toggle: '&eChanger'
+    top: '&eTop'
+    browse: '&eListe'
+    stats: '&eStats'
+    limit: '&eLimite'
+    info: '&eInfo'
+    archive: '&eArchive'
+scoreboard:
+  topline: '&2Top &e%jobname%'
+  gtopline: '&2Top G�n�ral'
+  lines: '&2%number%. &e%playername%'

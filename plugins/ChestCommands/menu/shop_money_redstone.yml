@@ -1,0 +1,420 @@
+menu-settings:
+
+  name: '&8Торговец'
+
+  rows: 6
+
+
+block_1:
+  COMMAND: 'console: give {player} 23 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 20
+  NAME: '&7Раздатчик: 1 шт.'
+  LORE:
+    - '&7Цена: &620 &7$'
+  ID: '23, 1'
+  POSITION-X: 1
+  POSITION-Y: 1
+
+
+block_2:
+  COMMAND: 'console: give {player} 25 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 10
+  NAME: '&7Нотный блок: 1 шт.'
+  LORE:
+    - '&7Цена: &610 &7$'
+  ID: '25, 1'
+  POSITION-X: 2
+  POSITION-Y: 1
+
+
+block_3:
+  COMMAND: 'console: give {player} 29 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 10
+  NAME: '&7Липкий поршень: 1 шт.'
+  LORE:
+    - '&7Цена: &610 &7$'
+  ID: '29, 1'
+  POSITION-X: 3
+  POSITION-Y: 1
+
+
+block_4:
+  COMMAND: 'console: give {player} 33 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 10
+  NAME: '&7Поршень: 1 шт.'
+  LORE:
+    - '&7Цена: &610 &7$'
+  ID: '33, 1'
+  POSITION-X: 4
+  POSITION-Y: 1
+
+
+block_5:
+  COMMAND: 'console: give {player} 46 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 50
+  NAME: '&7Динамит: 8 шт.'
+  LORE:
+    - '&7Цена: &650 &7$'
+  ID: '46, 8'
+  POSITION-X: 5
+  POSITION-Y: 1
+
+
+block_6:
+  COMMAND: 'console: give {player} 69 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 05
+  NAME: '&7Рычаг: 1 шт.'
+  LORE:
+    - '&7Цена: &605 &7$'
+  ID: '69, 1'
+  POSITION-X: 6
+  POSITION-Y: 1
+
+
+block_7:
+  COMMAND: 'console: give {player} 70 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 05
+  NAME: '&7Каменная нажимная плита: 1 шт.'
+  LORE:
+    - '&7Цена: &605 &7$'
+  ID: '70, 1'
+  POSITION-X: 7
+  POSITION-Y: 1
+
+
+block_8:
+  COMMAND: 'console: give {player} 72 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 05
+  NAME: '&7Деревянная нажимная плита: 1 шт.'
+  LORE:
+    - '&7Цена: &605 &7$'
+  ID: '72, 1'
+  POSITION-X: 8
+  POSITION-Y: 1
+
+
+block_9:
+  COMMAND: 'console: give {player} 76 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 05
+  NAME: '&7Красный факел: 8 шт.'
+  LORE:
+    - '&7Цена: &605 &7$'
+  ID: '76, 8'
+  POSITION-X: 9
+  POSITION-Y: 1
+
+
+block_10:
+  COMMAND: 'console: give {player} 77 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 05
+  NAME: '&7Кнопка: 1 шт.'
+  LORE:
+    - '&7Цена: &605 &7$'
+  ID: '77, 1'
+  POSITION-X: 1
+  POSITION-Y: 2
+
+
+block_11:
+  COMMAND: 'console: give {player} 96 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 05
+  NAME: '&7Люк: 1 шт.'
+  LORE:
+    - '&7Цена: &605 &7$'
+  ID: '96, 1'
+  POSITION-X: 2
+  POSITION-Y: 2
+
+
+block_12:
+  COMMAND: 'console: give {player} 107 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 05
+  NAME: '&7Калитка: 1 шт.'
+  LORE:
+    - '&7Цена: &605 &7$'
+  ID: '107, 1'
+  POSITION-X: 3
+  POSITION-Y: 2
+
+
+block_13:
+  COMMAND: 'console: give {player} 123 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 10
+  NAME: '&7Лампа: 1 шт.'
+  LORE:
+    - '&7Цена: &610 &7$'
+  ID: '123, 1'
+  POSITION-X: 4
+  POSITION-Y: 2
+
+
+block_14:
+  COMMAND: 'console: give {player} 131 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 05
+  NAME: '&7Крюк: 1 шт.'
+  LORE:
+    - '&7Цена: &605 &7$'
+  ID: '131, 1'
+  POSITION-X: 5
+  POSITION-Y: 2
+
+
+block_15:
+  COMMAND: 'console: give {player} 143 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 05
+  NAME: '&7Кнопка: 1 шт.'
+  LORE:
+    - '&7Цена: &605 &7$'
+  ID: '143, 1'
+  POSITION-X: 6
+  POSITION-Y: 2
+
+
+block_16:
+  COMMAND: 'console: give {player} 147 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 10
+  NAME: '&7Утяжелённая нажимная пластина (Лёгкая): 1 шт.'
+  LORE:
+    - '&7Цена: &610 &7$'
+  ID: '147, 1'
+  POSITION-X: 7
+  POSITION-Y: 2
+
+
+block_17:
+  COMMAND: 'console: give {player} 148 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 10
+  NAME: '&7Утяжелённая нажимная пластина (Тяжёлая): 1 шт.'
+  LORE:
+    - '&7Цена: &610 &7$'
+  ID: '148, 1'
+  POSITION-X: 8
+  POSITION-Y: 2
+
+
+block_18:
+  COMMAND: 'console: give {player} 151 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 50
+  NAME: '&7Датчик дневного света: 8 шт.'
+  LORE:
+    - '&7Цена: &650 &7$'
+  ID: '151, 1'
+  POSITION-X: 9
+  POSITION-Y: 2
+
+
+block_19:
+  COMMAND: 'console: give {player} 152 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 30
+  NAME: '&7Блок красного камня: 1 шт.'
+  LORE:
+    - '&7Цена: &630 &7$'
+  ID: '152, 1'
+  POSITION-X: 1
+  POSITION-Y: 3
+
+
+block_20:
+  COMMAND: 'console: give {player} 154 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 50
+  NAME: '&7Воронка: 1 шт.'
+  LORE:
+    - '&7Цена: &650 &7$'
+  ID: '154, 1'
+  POSITION-X: 2
+  POSITION-Y: 3
+
+
+block_21:
+  COMMAND: 'console: give {player} 158 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 10
+  NAME: '&7Выбрасыватель: 1 шт.'
+  LORE:
+    - '&7Цена: &610 &7$'
+  ID: '158, 1'
+  POSITION-X: 3
+  POSITION-Y: 3
+
+
+block_22:
+  COMMAND: 'console: give {player} 167 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 25
+  NAME: '&7Железный люк: 1 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: '167, 1'
+  POSITION-X: 4
+  POSITION-Y: 3
+
+
+block_23:
+  COMMAND: 'console: give {player} 183 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 20
+  NAME: '&7Еловые ворота: 1 шт.'
+  LORE:
+    - '&7Цена: &620 &7$'
+  ID: '183, 1'
+  POSITION-X: 5
+  POSITION-Y: 3
+
+
+block_24:
+  COMMAND: 'console: give {player} 184 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 20
+  NAME: '&7Берёзовые ворота: 1 шт.'
+  LORE:
+    - '&7Цена: &620 &7$'
+  ID: '184, 1'
+  POSITION-X: 6
+  POSITION-Y: 3
+
+
+block_25:
+  COMMAND: 'console: give {player} 185 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 20
+  NAME: '&7Ворота из тропической древесины: 1 шт.'
+  LORE:
+    - '&7Цена: &620 &7$'
+  ID: '185, 1'
+  POSITION-X: 7
+  POSITION-Y: 3
+
+
+block_26:
+  COMMAND: 'console: give {player} 186 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 20
+  NAME: '&7Забор из тёмного дуба: 1 шт.'
+  LORE:
+    - '&7Цена: &620 &7$'
+  ID: '186, 1'
+  POSITION-X: 8
+  POSITION-Y: 3
+
+
+block_27:
+  COMMAND: 'console: give {player} 187 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 20
+  NAME: '&7Ворота из акации: 1 шт.'
+  LORE:
+    - '&7Цена: &620 &7$'
+  ID: '187, 1'
+  POSITION-X: 9
+  POSITION-Y: 3
+
+
+block_28:
+  COMMAND: 'console: give {player} 324 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 20
+  NAME: '&7Дубовая дверь: 1 шт.'
+  LORE:
+    - '&7Цена: &620 &7$'
+  ID: '324, 1'
+  POSITION-X: 1
+  POSITION-Y: 4
+
+
+block_29:
+  COMMAND: 'console: give {player} 330 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 40
+  NAME: '&7Железная дверь: 1 шт.'
+  LORE:
+    - '&7Цена: &640 &7$'
+  ID: '330, 1'
+  POSITION-X: 2
+  POSITION-Y: 4
+
+
+block_30:
+  COMMAND: 'console: give {player} 331 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 20
+  NAME: '&7Красная пыль: 16 шт.'
+  LORE:
+    - '&7Цена: &620 &7$'
+  ID: '331, 16'
+  POSITION-X: 3
+  POSITION-Y: 4
+
+
+block_31:
+  COMMAND: 'console: give {player} 356 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 30
+  NAME: '&7Повторитель: 8 шт.'
+  LORE:
+    - '&7Цена: &630 &7$'
+  ID: '356, 8'
+  POSITION-X: 4
+  POSITION-Y: 4
+
+
+block_32:
+  COMMAND: 'console: give {player} 404 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 40
+  NAME: '&7Компаратор: 8 шт.'
+  LORE:
+    - '&7Цена: &640 &7$'
+  ID: '404, 8'
+  POSITION-X: 5
+  POSITION-Y: 4
+
+
+block_33:
+  COMMAND: 'console: give {player} 427 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 20
+  NAME: '&7Сосновая дверь: 1 шт.'
+  LORE:
+    - '&7Цена: &620 &7$'
+  ID: '427, 1'
+  POSITION-X: 6
+  POSITION-Y: 4
+
+
+block_34:
+  COMMAND: 'console: give {player} 428 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 20
+  NAME: '&7Березовая дверь: 1 шт.'
+  LORE:
+    - '&7Цена: &620 &7$'
+  ID: '428, 1'
+  POSITION-X: 7
+  POSITION-Y: 4
+
+
+block_35:
+  COMMAND: 'console: give {player} 429 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 20
+  NAME: '&7Дверь из тропической древесины: 1 шт.'
+  LORE:
+    - '&7Цена: &620 &7$'
+  ID: '429, 1'
+  POSITION-X: 8
+  POSITION-Y: 4
+
+
+block_36:
+  COMMAND: 'console: give {player} 430 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 20
+  NAME: '&7Дверь из акации: 1 шт.'
+  LORE:
+    - '&7Цена: &620 &7$'
+  ID: '430, 1'
+  POSITION-X: 9
+  POSITION-Y: 4
+
+
+block_37:
+  COMMAND: 'console: give {player} 431 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_redstone.yml'
+  PRICE: 20
+  NAME: '&7Дверь из тёмного дуба: 1 шт.'
+  LORE:
+    - '&7Цена: &620 &7$'
+  ID: '431, 1'
+  POSITION-X: 1
+  POSITION-Y: 5
+
+
+back:
+  COMMAND: 'open:shop.yml; sound: ENTITY_ARROW_SHOOT, 3.0, 3.0'
+  NAME: '&aВернуться...'
+  ID: 381
+  POSITION-X: 5
+  POSITION-Y: 6

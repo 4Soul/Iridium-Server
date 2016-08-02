@@ -1,0 +1,51 @@
+#  ----------------------------------------------------
+#  AutoMessage Configuration File
+#  ----------------------------------------------------
+#  Message Configuration:
+#     Messages are handled in lists to allow for advanced customization!
+#     Feel free to add color codes by using & in your messages!
+#     To split a message onto multiple lines use the \n delimiter!
+#     Lines starting with / will be run as a command!
+#     To add single apostrophes into a message use ''.
+#     For a complete tutorial go to http://dev.bukkit.org/server-mods/automessage.
+#     If you are unfamiliar with YAML use the in-game commands: /am help
+
+settings:
+  enabled: true
+  min-players: 0
+  log-to-console: false
+message-lists:
+  regular:
+    enabled: true
+    interval: 30
+    expiry: -1
+    random: true
+    messages:
+    - '&e[&c✉&e] &3\n &7↱ &eБудь вкурсе обновлений сервера!\n &7↦ &eПодписывайся на
+      группу в контакте! \n &7↳ &eСсылка на группу » &cvk.com/iridium_mc\n&7'
+    - '&e[&c✉&e] &eПокупать донат только на сайте » &chttp://iridium-mc.ga'
+    - '&e[&c✉&e] &eПри покупке доната, на сервер он прийдет в течении &c10-ти&e секунд!'
+    - '&e[&c✉&e] &eНаша группа в контакте » &cvk.com/iridium_mc'
+    - '&e[&c✉&e] &eОнлайн-покупка привелегии » &chttp://iridium-mc.ga'
+    - '&e[&c✉&e] &eОнлайн-магазин сервера » &chttp://iridium-mc.ga'
+    - '&e[&c✉&e] &3\n &7↱ &eХочешь поддержать &cсервер? \n &7↦ &eПокупай донат на
+      сайте: &chttp://iridium-mc.ga \n &7↳ &eВзамен вы получите уйму &cкоманд! \n&7'
+    - '&e[&c✉&e] &eМеню сервера » &c/menu'
+    - '&e[&c✉&e] &eКуча хороших возможностей » &c/donate'
+    - '&e[&c✉&e] &eОгромное количество команд есть у донатеров! Выбери подходящий
+      » &c/donate'
+    - '&e[&c✉&e] &eАйпи сервера » &ciridium-mc.ga'
+    - '&e[&c✉&e] &eРандомный телепорт » &c/rp'
+    - '&e[&c✉&e] &3\n &7↱ &eХочешь сменить скин но нет &cлицензии? \n &7↦ &eНе проблема.
+      Просто введи команду: \n &7↳ &c/skin <ник понравившегося скина>\n&7'
+    - '&e[&c✉&e] &3\n &7↱ &eРассказывайте о нашем сервере &cдрузьям! \n &7↦ &eНаш
+      IP: &ciridium-mc.ga \n &7↳ &eЭтим вы поможете развиваться &cсерверу&e быстрее!
+      \n&7'
+    - '&e[&c✉&e] &eПаспорт на сервере, вводи » &c/pass'
+    - '&e[&c✉&e] &eМеню сервера » &c/menu'
+    - '&e[&c✉&e] &eВыделись среди друзей, купи донат! Они будут в восторге! Вводи
+      &c/donate'
+    - '&e[&c✉&e] &eДонат покупается на всегда и сохраняется после вайпа! Покупай скорее:
+      &chttp://iridium-mc.ga'
+    - '&e[&c✉&e] &eА вы знали что у нас можно сидеть на ступеньках и строить батуты?
+      Попробуйте !'

@@ -1,0 +1,24 @@
+socialspy: false
+lastAccountName: 4Soul
+timestamps:
+  login: 1469961802077
+  lastteleport: 1469868464067
+  kits:
+    bonus: 1469869107759
+    start: 1469869113612
+  logout: 1469961803452
+ipAddress: 80.252.153.147
+lastlocation:
+  world: world
+  x: 3309.5
+  y: 72.0
+  z: -1153.5
+  yaw: 77.39997
+  pitch: 15.150003
+logoutlocation:
+  world: world
+  x: -176.0
+  y: 64.0
+  z: -204.0
+  yaw: 0.0
+  pitch: 0.0

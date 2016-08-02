@@ -1,0 +1,62 @@
+claim:
+  vertexpand:
+    enabled: false
+  blocklimits:
+    enabled: true
+    limits:
+      default: 90000
+      fly: 12000
+      vip: 120000
+      prem: 150000
+      creat: 200000
+      creat+: 250000
+      moder: 300000
+      bog: 400000
+      admin: 500000
+      gladmin: 1000000
+      glav: 9999999
+regionprotect:
+  flow:
+    lava:
+      enabled: true
+    water:
+      enabled: true
+    otherliquid:
+      enabled: false
+  ignitebyplayer:
+    enabled: true
+  fire:
+    spread:
+      toregion:
+        enabled: true
+      inregion:
+        enabled: false
+    burn:
+      enabled: true
+  explosion:
+    block:
+      enabled: true
+    entity:
+      enabled: true
+  pistonmove:
+    enabled: true
+autoflags:
+  enabled: true
+  flags:
+    mob-spawning: DENY
+    creeper-explosion: DENY
+    allow-shop: DENY
+    lightning: DENY
+    pvp: DENY
+    damage-animals: DENY
+    tnt: DENY
+restrictcommands:
+  enabled: true
+  commands:
+  - warp set
+  - warp pset
+  - sethome
+  - warp create
+  - warp preate
+extendedwewand:
+  enabled: false

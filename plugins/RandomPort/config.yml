@@ -1,0 +1,30 @@
+X:
+  Max: 3500
+  Min: -3500
+Random Nether Portal Teleports:
+  Choose Randomly:
+    Odds of ported out of 100: 10
+    Activated: false
+  Activated: false
+Cooldown:
+  Length in seconds: 120
+  Activated: true
+PortOnDeath:
+  Activated: false
+  Choose Randomly:
+    Activated: false
+    Odds of ported out of 100: 10
+Version:
+  Number: 3.0
+Strike Lightning Effect: true
+Z:
+  Min: -3500
+  Max: 3500
+Permissions:
+  Pex: true
+Block Id's to avoid:
+- 7
+- 8
+- 9
+- 10
+- 11

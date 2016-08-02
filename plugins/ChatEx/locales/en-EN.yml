@@ -1,0 +1,25 @@
+Commands:
+  Reload:
+    Description: Перезагрузка плагина.
+  Clear:
+    Description: Очистка чата.
+    Console: CONSOLE
+    Unknown: UNKNOWN
+Messages:
+  Commands:
+    Reload:
+      Success: '&aКонфиг перезагружен.'
+    Clear:
+      Success: '&aЧат очистил '
+  Chat:
+    AdDetected: '&4Реклама не разрешена! (%perm)'
+    AdNotify: "&c%player пытался рекламировать: \n&a %message"
+  CommandResult:
+    NoPermission: '&4[ERROR] &7У вас нет прав на это! &c(%perm)'
+    WrongUsage: '&c[ERROR] &7Wrong usage! Please type &6/%cmd% help&7!'
+  Player:
+    Join: '%faction %prefix%displayname%suffix &ejoined the game!'
+    FirstJoin: '%faction %prefix%displayname%suffix &ejoined the game &6for the first
+      time!'
+    Kick: '%faction %prefix%displayname%suffix &ewas kicked from the game!'
+    Quit: '%faction %prefix%displayname%suffix &eleft the game!'

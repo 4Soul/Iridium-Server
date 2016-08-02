@@ -1,0 +1,508 @@
+menu-settings:
+
+  name: '&6[+] Торговец [+]'
+
+  rows: 6
+
+
+block_1:
+  COMMAND: 'console: give {player} 1 32; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 15
+  NAME: '&7Камень: 32 шт.'
+  LORE:
+    - '&7Цена: &615 &7$'
+  ID: '1, 32'
+  POSITION-X: 1
+  POSITION-Y: 1
+
+
+block_2:
+  COMMAND: 'console: give {player} stone:1 32; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 15
+  NAME: '&7Гранит: 32 шт.'
+  LORE:
+    - '&7Цена: &615 &7$'
+  ID: 'stone:1, 32'
+  POSITION-X: 2
+  POSITION-Y: 1
+
+
+block_3:
+  COMMAND: 'console: give {player} stone:2 32; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 25
+  NAME: '&7Гладкй гранит: 32 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: 'stone:2, 32'
+  POSITION-X: 3
+  POSITION-Y: 1
+
+
+block_4:
+  COMMAND: 'console: give {player} stone:3 32; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 15
+  NAME: '&7Диорит: 32 шт.'
+  LORE:
+    - '&7Цена: &615 &7$'
+  ID: 'stone:3, 32'
+  POSITION-X: 4
+  POSITION-Y: 1
+
+
+block_5:
+  COMMAND: 'console: give {player} stone:4 32; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 25
+  NAME: '&7Гладкий диорит: 32 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: 'stone:4, 32'
+  POSITION-X: 5
+  POSITION-Y: 1
+
+
+block_6:
+  COMMAND: 'console: give {player} stone:5 32; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 15
+  NAME: '&7Андезит: 32 шт.'
+  LORE:
+    - '&7Цена: &615 &7$'
+  ID: 'stone:5, 32'
+  POSITION-X: 6
+  POSITION-Y: 1
+
+
+block_7:
+  COMMAND: 'console: give {player} stone:6 32; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 25
+  NAME: '&7Гладкий андезит: 32 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: 'stone:6, 32'
+  POSITION-X: 7
+  POSITION-Y: 1
+
+
+block_8:
+  COMMAND: 'console: give {player} 2 32; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 10
+  NAME: '&7Трава: 32 шт.'
+  LORE:
+    - '&7Цена: &610 &7$'
+  ID: '2, 32'
+  POSITION-X: 8
+  POSITION-Y: 1
+
+
+block_9:
+  COMMAND: 'console: give {player} 3 32; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 05
+  NAME: '&7Земля: 32 шт.'
+  LORE:
+    - '&7Цена: &605 &7$'
+  ID: '3, 32'
+  POSITION-X: 9
+  POSITION-Y: 1
+
+
+block_10:
+  COMMAND: 'console: give {player} dirt:1 32; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 10
+  NAME: '&7Грубая земля: 32 шт.'
+  LORE:
+    - '&7Цена: &610 &7$'
+  ID: 'dirt:1, 32'
+  POSITION-X: 1
+  POSITION-Y: 2
+
+
+block_11:
+  COMMAND: 'console: give {player} dirt:2 32; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 10
+  NAME: '&7Подзол: 32 шт.'
+  LORE:
+    - '&7Цена: &610 &7$'
+  ID: 'dirt:2, 32'
+  POSITION-X: 2
+  POSITION-Y: 2
+
+
+block_12:
+  COMMAND: 'console: give {player} 4 32; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 10
+  NAME: '&7Булыжник: 32 шт.'
+  LORE:
+    - '&7Цена: &610 &7$'
+  ID: '4, 32'
+  POSITION-X: 3
+  POSITION-Y: 2
+
+
+block_13:
+  COMMAND: 'console: give {player} 12 32; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 10
+  NAME: '&7Песок: 32 шт.'
+  LORE:
+    - '&7Цена: &610 &7$'
+  ID: '12, 32'
+  POSITION-X: 4
+  POSITION-Y: 2
+
+
+block_14:
+  COMMAND: 'console: give {player} sand:1 32; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 20
+  NAME: '&7Красный песок: 32 шт.'
+  LORE:
+    - '&7Цена: &620 &7$'
+  ID: 'sand:1, 32'
+  POSITION-X: 5
+  POSITION-Y: 2
+
+
+block_15:
+  COMMAND: 'console: give {player} 13 32; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 15
+  NAME: '&7Гравий: 32 шт.'
+  LORE:
+    - '&7Цена: &615 &7$'
+  ID: '13, 32'
+  POSITION-X: 6
+  POSITION-Y: 2
+
+
+block_16:
+  COMMAND: 'console: give {player} 19 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 30
+  NAME: '&7Губка: 8 шт.'
+  LORE:
+    - '&7Цена: &630 &7$'
+  ID: '19, 8'
+  POSITION-X: 7
+  POSITION-Y: 2
+
+
+block_17:
+  COMMAND: 'console: give {player} sponge:1 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 35
+  NAME: '&7Мокрая губка: 8 шт.'
+  LORE:
+    - '&7Цена: &635 &7$'
+  ID: 'sponge:1, 8'
+  POSITION-X: 8
+  POSITION-Y: 2
+
+
+block_18:
+  COMMAND: 'console: give {player} 20 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 20
+  NAME: '&7Стекло: 16 шт.'
+  LORE:
+    - '&7Цена: &620 &7$'
+  ID: '20, 16'
+  POSITION-X: 9
+  POSITION-Y: 2
+
+
+block_19:
+  COMMAND: 'console: give {player} 24 32; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 30
+  NAME: '&7Песчаник: 32 шт.'
+  LORE:
+    - '&7Цена: &630 &7$'
+  ID: '24, 32'
+  POSITION-X: 1
+  POSITION-Y: 3
+
+
+block_20:
+  COMMAND: 'console: give {player} sandstone:1 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 20
+  NAME: '&7Резной песчаник: 16 шт.'
+  LORE:
+    - '&7Цена: &620 &7$'
+  ID: 'sandstone:1, 16'
+  POSITION-X: 2
+  POSITION-Y: 3
+
+
+block_21:
+  COMMAND: 'console: give {player} sandstone:2 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 15
+  NAME: '&7Гладкий песчаник: 16 шт.'
+  LORE:
+    - '&7Цена: &615 &7$'
+  ID: 'sandstone:2, 16'
+  POSITION-X: 3
+  POSITION-Y: 3
+
+
+block_22:
+  COMMAND: 'console: give {player} 45 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 15
+  NAME: '&7Кирпичи: 8 шт.'
+  LORE:
+    - '&7Цена: &615 &7$'
+  ID: '45, 8'
+  POSITION-X: 4
+  POSITION-Y: 3
+
+
+block_23:
+  COMMAND: 'console: give {player} 47 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 30
+  NAME: '&7Книжная полка: 8 шт.'
+  LORE:
+    - '&7Цена: &630 &7$'
+  ID: '47, 8'
+  POSITION-X: 5
+  POSITION-Y: 3
+
+
+block_24:
+  COMMAND: 'console: give {player} 48 32; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 25
+  NAME: '&7Замшелый булыжник: 32 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: '48, 32'
+  POSITION-X: 6
+  POSITION-Y: 3
+
+
+block_25:
+  COMMAND: 'console: give {player} 49 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 60
+  NAME: '&7Обсидиан: 8 шт.'
+  LORE:
+    - '&7Цена: &660 &7$'
+  ID: '49, 8'
+  POSITION-X: 7
+  POSITION-Y: 3
+
+
+block_26:
+  COMMAND: 'console: give {player} 79 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 25
+  NAME: '&7Лёд: 8 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: '79, 8'
+  POSITION-X: 8
+  POSITION-Y: 3
+
+
+block_27:
+  COMMAND: 'console: give {player} 80 32; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 10
+  NAME: '&7Снег: 32 шт.'
+  LORE:
+    - '&7Цена: &610 &7$'
+  ID: '80, 32'
+  POSITION-X: 9
+  POSITION-Y: 3
+
+
+block_28:
+  COMMAND: 'console: give {player} 82 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 20
+  NAME: '&7Глина: 16 шт.'
+  LORE:
+    - '&7Цена: &620 &7$'
+  ID: '82, 16'
+  POSITION-X: 1
+  POSITION-Y: 4
+
+
+block_29:
+  COMMAND: 'console: give {player} 87 32; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 25
+  NAME: '&7Адский камень: 32 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: '87, 32'
+  POSITION-X: 2
+  POSITION-Y: 4
+
+
+block_30:
+  COMMAND: 'console: give {player} 88 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 50
+  NAME: '&7Песок душ: 8 шт.'
+  LORE:
+    - '&7Цена: &650 &7$'
+  ID: '88, 8'
+  POSITION-X: 3
+  POSITION-Y: 4
+
+
+block_31:
+  COMMAND: 'console: give {player} 89 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 25
+  NAME: '&7Светящийся камень: 16 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: '89, 16'
+  POSITION-X: 4
+  POSITION-Y: 4
+
+
+block_32:
+  COMMAND: 'console: give {player} 98 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 25
+  NAME: '&7Каменные кирпичи: 16 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: '98, 16'
+  POSITION-X: 5
+  POSITION-Y: 4
+
+
+block_33:
+  COMMAND: 'console: give {player} stonebrick:1 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 30
+  NAME: '&7Замшелые каменные кирпичи: 16 шт.'
+  LORE:
+    - '&7Цена: &630 &7$'
+  ID: 'stonebrick:1, 16'
+  POSITION-X: 6
+  POSITION-Y: 4
+
+
+block_34:
+  COMMAND: 'console: give {player} stonebrick:2 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 30
+  NAME: '&7Потресканные каменные кирпичи: 16 шт.'
+  LORE:
+    - '&7Цена: &630 &7$'
+  ID: 'stonebrick:2, 16'
+  POSITION-X: 7
+  POSITION-Y: 4
+
+
+block_35:
+  COMMAND: 'console: give {player} stonebrick:3 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 30
+  NAME: '&7Резные каменные кирпичи: 16 шт.'
+  LORE:
+    - '&7Цена: &630 &7$'
+  ID: 'stonebrick:3, 16'
+  POSITION-X: 8
+  POSITION-Y: 4
+
+
+block_36:
+  COMMAND: 'console: give {player} 170 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 60
+  NAME: '&7Сноп сена: 8 шт.'
+  LORE:
+    - '&7Цена: &660 &7$'
+  ID: '170, 8'
+  POSITION-X: 9
+  POSITION-Y: 4
+
+
+block_37:
+  COMMAND: 'console: give {player} 112 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 25
+  NAME: '&7Адские кирпичи: 16 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: '112, 16'
+  POSITION-X: 1
+  POSITION-Y: 5
+
+
+block_38:
+  COMMAND: 'console: give {player} 121 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 30
+  NAME: '&7Эндерняк: 8 шт.'
+  LORE:
+    - '&7Цена: &630 &7$'
+  ID: '121, 8'
+  POSITION-X: 2
+  POSITION-Y: 5
+
+
+block_39:
+  COMMAND: 'console: give {player} 155 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 25
+  NAME: '&7Кварцевый блок: 16 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: '155, 16'
+  POSITION-X: 3
+  POSITION-Y: 5
+
+
+block_40:
+  COMMAND: 'console: give {player} quartz_block:1 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 30
+  NAME: '&7Резной кварцевый блок: 16 шт.'
+  LORE:
+    - '&7Цена: &630 &7$'
+  ID: 'quartz_block:1, 16'
+  POSITION-X: 4
+  POSITION-Y: 5
+
+
+block_41:
+  COMMAND: 'console: give {player} quartz_block:2 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 30
+  NAME: '&7Кварцевая колонна: 16 шт.'
+  LORE:
+    - '&7Цена: &630 &7$'
+  ID: 'quartz_block:2, 16'
+  POSITION-X: 5
+  POSITION-Y: 5
+
+
+block_42:
+  COMMAND: 'console: give {player} 168 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 40
+  NAME: '&7Призмарин: 16 шт.'
+  LORE:
+    - '&7Цена: &640 &7$'
+  ID: '168, 16'
+  POSITION-X: 6
+  POSITION-Y: 5
+
+
+block_43:
+  COMMAND: 'console: give {player} prismarine:1 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 50
+  NAME: '&7Призмариновый кирпич: 16 шт.'
+  LORE:
+    - '&7Цена: &650 &7$'
+  ID: 'prismarine:1, 16'
+  POSITION-X: 7
+  POSITION-Y: 5
+
+
+block_44:
+  COMMAND: 'console: give {player} prismarine:2 16; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 50
+  NAME: '&7Тёмный призмарин: 16 шт.'
+  LORE:
+    - '&7Цена: &650 &7$'
+  ID: 'prismarine:2, 16'
+  POSITION-X: 8
+  POSITION-Y: 5
+
+
+block_45:
+  COMMAND: 'console: give {player} 169 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_blocks.yml'
+  PRICE: 50
+  NAME: '&7Морской фонарь: 1 шт.'
+  LORE:
+    - '&7Цена: &650 &7$'
+  ID: '169, 1'
+  POSITION-X: 9
+  POSITION-Y: 5
+
+
+back:
+  COMMAND: 'open:shop.yml; sound: ENTITY_ARROW_SHOOT, 3.0, 3.0'
+  NAME: '&aВернуться...'
+  ID: 381
+  POSITION-X: 5
+  POSITION-Y: 6

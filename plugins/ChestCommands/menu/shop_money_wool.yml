@@ -1,0 +1,189 @@
+menu-settings:
+
+  name: '&8Торговец'
+
+  rows: 6
+
+
+block_1:
+  COMMAND: 'console: give {player} 35 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_wool.yml'
+  PRICE: 25
+  NAME: '&7Шерсть: 8 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: '35, 8'
+  POSITION-X: 1
+  POSITION-Y: 1
+
+
+block_2:
+  COMMAND: 'console: give {player} wool:1 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_wool.yml'
+  PRICE: 25
+  NAME: '&7Оранжевая шерсть: 8 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: 'wool:1, 8'
+  POSITION-X: 2
+  POSITION-Y: 1
+
+
+block_3:
+  COMMAND: 'console: give {player} wool:2 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_wool.yml'
+  PRICE: 25
+  NAME: '&7Пурпурная шерсть: 8 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: 'wool:2, 8'
+  POSITION-X: 3
+  POSITION-Y: 1
+
+
+block_4:
+  COMMAND: 'console: give {player} wool:3 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_wool.yml'
+  PRICE: 25
+  NAME: '&7Голубая шерсть: 8 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: 'wool:3, 8'
+  POSITION-X: 4
+  POSITION-Y: 1
+
+
+block_5:
+  COMMAND: 'console: give {player} wool:4 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_wool.yml'
+  PRICE: 25
+  NAME: '&7Жёлтая шерсть: 8 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: 'wool:4, 8'
+  POSITION-X: 5
+  POSITION-Y: 1
+
+
+block_6:
+  COMMAND: 'console: give {player} wool:5 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_wool.yml'
+  PRICE: 25
+  NAME: '&7Лаймовая шерсть: 8 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: 'wool:5, 8'
+  POSITION-X: 6
+  POSITION-Y: 1
+
+
+block_7:
+  COMMAND: 'console: give {player} wool:6 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_wool.yml'
+  PRICE: 25
+  NAME: '&7Розовая шерсть: 8 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: 'wool:6, 8'
+  POSITION-X: 7
+  POSITION-Y: 1
+
+
+block_8:
+  COMMAND: 'console: give {player} wool:7 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_wool.yml'
+  PRICE: 25
+  NAME: '&7Серая шерсть: 8 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: 'wool:7, 8'
+  POSITION-X: 8
+  POSITION-Y: 1
+
+
+block_9:
+  COMMAND: 'console: give {player} wool:8 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_wool.yml'
+  PRICE: 25
+  NAME: '&7Светло-серая шерсть: 8 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: 'wool:8, 8'
+  POSITION-X: 9
+  POSITION-Y: 1
+
+
+block_10:
+  COMMAND: 'console: give {player} wool:9 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_wool.yml'
+  PRICE: 25
+  NAME: '&7Бирюзовая шерсть: 8 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: 'wool:9, 8'
+  POSITION-X: 1
+  POSITION-Y: 2
+
+
+block_11:
+  COMMAND: 'console: give {player} wool:10 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_wool.yml'
+  PRICE: 25
+  NAME: '&7Фиолетовая шерсть: 8 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: 'wool:10, 8'
+  POSITION-X: 2
+  POSITION-Y: 2
+
+
+block_12:
+  COMMAND: 'console: give {player} wool:11 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_wool.yml'
+  PRICE: 25
+  NAME: '&7Синяя шерсть: 8 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: 'wool:11, 8'
+  POSITION-X: 3
+  POSITION-Y: 2
+
+
+block_13:
+  COMMAND: 'console: give {player} wool:12 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_wool.yml'
+  PRICE: 25
+  NAME: '&7Коричневая шерсть: 8 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: 'wool:12, 8'
+  POSITION-X: 4
+  POSITION-Y: 2
+
+
+block_14:
+  COMMAND: 'console: give {player} wool:13 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_wool.yml'
+  PRICE: 25
+  NAME: '&7Зелёная шерсть: 8 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: 'wool:13, 8'
+  POSITION-X: 5
+  POSITION-Y: 2
+
+
+block_15:
+  COMMAND: 'console: give {player} wool:14 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_wool.yml'
+  PRICE: 25
+  NAME: '&7Красная шерсть: 8 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: 'wool:14, 8'
+  POSITION-X: 6
+  POSITION-Y: 2
+
+
+block_16:
+  COMMAND: 'console: give {player} wool:15 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_wool.yml'
+  PRICE: 25
+  NAME: '&7Чёрная шерсть: 8 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: 'wool:15, 8'
+  POSITION-X: 7
+  POSITION-Y: 2
+
+
+back:
+  COMMAND: 'open:shop.yml; sound: ENTITY_ARROW_SHOOT, 3.0, 3.0'
+  NAME: '&aВернуться...'
+  ID: 381
+  POSITION-X: 5
+  POSITION-Y: 6

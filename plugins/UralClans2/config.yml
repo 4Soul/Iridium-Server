@@ -1,0 +1,29 @@
+debug: false
+language: ru
+database: sqlite # mysql or sqlite
+mysql:
+    host: localhost
+    port: 3306
+    database: minecraft
+    username: root
+    password: admin
+settings:
+    warm: 3
+    max_symbols: 15
+    min_symbols: 3
+    default_max: 25
+    max_upgrade: 100
+    #Cost of creating clan. Set 0 to disable.
+    create_cost: 1000
+    #Cost of upgrading clan. Set 0 to disable.
+    upgrade_cost: 50
+    clan_regex: '[а-яА-Яa-zA-Z0-9]*'
+    #The minimum number of players to create a clan house. Set 0 to disable.
+    home_min: 0
+    #Resolution attacks when enabled PVP WorldGuard. Set 0 to disable or 1 to enable.
+    pvp: 0
+    #Enabling leader chats
+    leader_chat: true
+    #Enabling clan chats
+    clan_chat: true
+version_config: 3

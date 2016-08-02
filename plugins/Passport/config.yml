@@ -1,0 +1,33 @@
+LastPasportNumber: 1
+GuiName: '&2&lПасспорт'
+DescriptionItem: '&2&lОписание'
+Pasport:
+- '&fНик: &a%name'
+- '&fСтатистика убийств: &a%playerKills'
+- '&fСтатистика моб-убийств: &a%mobKills'
+- '&fСтатистика смертей: &a%deaths'
+- '&fСкайп: &a%skype'
+- '&fВк: &a%vk'
+- '&fПол: &a%sex'
+- '&fРаботы: &a%jobs'
+- '&fВозраст: &a%age'
+- '&fКлан: &a%clan'
+- '&fВаша группа: &a%prefix'
+- '&fНа сервере с: &a%dateReg'
+- '&fВсего наиграл: &a%totalTime'
+- '&fНомер пасспорта: &a%passNumber'
+Description:
+- '&3/pass &9- &7Покажет это меню'
+- '&3/pass &a<Игрок> &9- &7Посмотреть пасспорт игрока'
+- '&3/pass &2sex &a<М/Ж> &9- &7Указать ваш пол'
+- '&3/pass &2skype &a<Ваш_Скайп> &9- &7Указать ваш скайп'
+- '&3/pass &2age &a<Ваш возраст> &9- &7Указать возраст'
+- '&3/pass &2vk &a<Ваш ID> &9- &7Указать ВК'
+Messages:
+  NoPermission: '&cНет прав'
+  SkypeInstalled: '&6Skype указан'
+  SexInstalled: '&6Пол указан'
+  VkInstalled: '&6Вк указан'
+  AgeInstalled: '&6Возраст указан'
+  Male: Мужчина
+  Female: Женщина

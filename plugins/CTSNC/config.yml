@@ -1,0 +1,102 @@
+CTSNC:
+  AutoUpdater: false
+  ServerVersion: false
+  BungeeCord: false
+  CustomPrefix: '&c[&eCTSNC&c] &6<9> '
+  TimeFormat: HH:mm:ss
+  TeleportOnJoin: false
+  PlayerStatsData: false
+  AFK_System:
+    AutoAFKMode: false
+    AutoAFKModeSchedule(InTicks): 200
+    AutoAFKModeMessage:
+      Private: false
+      Broadcast: false
+  ONJOIN:
+    Command:
+      Player:
+        Enabled: false
+        Cmd: say Hi! :)
+      Console:
+        Enabled: false
+        Cmd: say Welcome player [PN]!
+    JoinMessage:
+      Enabled: false
+      Content: '&e&l[PN] &ahas joined the Server!'
+    Titles:
+      Enabled: true
+      Title:
+        Content: '&3'
+        Times:
+          FadeIn: 30
+          Stay: 40
+          FadeOut: 30
+      Subtitle:
+        Content: ' &3 &f&lОнлайн магазин: &b&lhttp://iridium-mc.ga'
+        Times:
+          FadeIn: 30
+          Stay: 40
+          FadeOut: 30
+    ActionBar:
+      Enabled: false
+      Normal:
+        Enabled: false
+        Content: '&aWelcome on this Server!'
+      Animated:
+        Enabled: false
+        Content: '&aWelcome on this &6Server&a! &aThis is a animated &6ActionBar&a!'
+        MaxLenght: 16
+        SpaceBetweenStartAndEnd: 4
+        DisplayDuration: 150
+  WELCOME_BACK:
+    ServerRestartOverride: false
+    Enabled: true
+    Titles:
+      Enabled: true
+      Title:
+        Content: '&3'
+      Subtitle:
+        Content: ' &3 &f&lОнлайн магазин: &b&lhttp://iridium-mc.ga'
+    ActionBar:
+      Enabled: false
+      Normal:
+        Enabled: false
+        Content: '&aWelcome again &e&l[PN]&a!'
+      Animated:
+        Enabled: false
+        Content: '&aWelcome again &e[PN]&a! &aThis is a animated &6ActionBar&a!'
+        MaxLenght: 16
+        SpaceBetweenStartAndEnd: 4
+        DisplayDuration: 150
+  ONQUIT:
+    QuitMessage:
+      Enabled: false
+      Content: '&e&l[PN] &chas left the Server!'
+  MESSAGES:
+    Spawn:
+      Enabled: false
+      Content: '&aYou were successfully teleported to the Spawn!'
+    NoPermission:
+      Enabled: false
+      Content: '&cYou dont have the right permission!'
+    Ping:
+      Broadcast:
+        Enabled: false
+        Content: '&aThe ping of &e[PN] &ais &6[PG]&a!'
+      Private:
+        Enabled: false
+        Content: '&aYour current ping is &c[PG]&a!'
+    AFK:
+      Broadcast:
+        Enabled: false
+        Content_Enabled: '&aThe player &e[PN] &ais now AFK!'
+        Content_Disabled: '&cThe player &e[PN] &cis not more AFK!'
+      Private:
+        Enabled: false
+        Content_Enabled: '&aYou are now in the &6&lAFK &aMode!'
+        Content_Disabled: '&cYou are not more in the &6&lAFK &cMode!'
+  WorldSupport: false
+  Worlds:
+  - world
+  - hub
+  - lobby

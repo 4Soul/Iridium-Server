@@ -1,0 +1,329 @@
+SURVIVAL:
+  inv:
+  - null
+  - null
+  - null
+  - null
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_SPADE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §dСтартовый набор
+      lore:
+      - §3Вещь 4Soul
+      enchants:
+        DIG_SPEED: 1
+        DURABILITY: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_PICKAXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §dСтартовый набор
+      lore:
+      - §3Вещь 4Soul
+      enchants:
+        DIG_SPEED: 1
+        DURABILITY: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_AXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §dСтартовый набор
+      lore:
+      - §3Вещь 4Soul
+      enchants:
+        DIG_SPEED: 1
+        DURABILITY: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §dСтартовый набор
+      lore:
+      - §3Вещь 4Soul
+      enchants:
+        DAMAGE_UNDEAD: 2
+        DURABILITY: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    damage: 1
+    amount: 3
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §dСтартовый набор
+      lore:
+      - §3Вещь 4Soul
+  - ==: org.bukkit.inventory.ItemStack
+    type: COOKED_BEEF
+    amount: 24
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §dСтартовый набор
+      lore:
+      - §3Вещь 4Soul
+  - ==: org.bukkit.inventory.ItemStack
+    type: GLASS
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §dСтартовый набор
+      lore:
+      - §3Вещь 4Soul
+  - ==: org.bukkit.inventory.ItemStack
+    type: LOG
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §dСтартовый набор
+      lore:
+      - §3Вещь 4Soul
+  - ==: org.bukkit.inventory.ItemStack
+    type: BRICK
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §dСтартовый набор
+      lore:
+      - §3Вещь 4Soul
+  - ==: org.bukkit.inventory.ItemStack
+    type: EXP_BOTTLE
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §dСтартовый набор
+      lore:
+      - §3Вещь 4Soul
+  - ==: org.bukkit.inventory.ItemStack
+    type: WORKBENCH
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §dСтартовый набор
+      lore:
+      - §3Вещь 4Soul
+  - ==: org.bukkit.inventory.ItemStack
+    type: FURNACE
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: §dСтартовый набор
+      lore:
+      - §3Вещь 4Soul
+      blockMaterial: FURNACE
+  - ==: org.bukkit.inventory.ItemStack
+    type: CHEST
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: §dСтартовый набор
+      lore:
+      - §3Вещь 4Soul
+      blockMaterial: CHEST
+  - ==: org.bukkit.inventory.ItemStack
+    type: APPLE
+    amount: 32
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §dСтартовый набор
+      lore:
+      - §3Вещь 4Soul
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: §dСтартовый набор
+      lore:
+      - §3Вещь 4Soul
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+      color:
+        ==: Color
+        RED: 0
+        BLUE: 0
+        GREEN: 255
+  - ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: §dСтартовый набор
+      lore:
+      - §3Вещь 4Soul
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+      color:
+        ==: Color
+        RED: 255
+        BLUE: 255
+        GREEN: 255
+  - ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: §dСтартовый набор
+      lore:
+      - §3Вещь 4Soul
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+      color:
+        ==: Color
+        RED: 255
+        BLUE: 255
+        GREEN: 255
+  - ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: §dСтартовый набор
+      lore:
+      - §3Вещь 4Soul
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+      color:
+        ==: Color
+        RED: 0
+        BLUE: 0
+        GREEN: 255
+  - null
+  armor:
+  - ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: §dСтартовый набор
+      lore:
+      - §3Вещь 4Soul
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+      color:
+        ==: Color
+        RED: 0
+        BLUE: 0
+        GREEN: 255
+  - ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: §dСтартовый набор
+      lore:
+      - §3Вещь 4Soul
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+      color:
+        ==: Color
+        RED: 255
+        BLUE: 255
+        GREEN: 255
+  - ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: §dСтартовый набор
+      lore:
+      - §3Вещь 4Soul
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+      color:
+        ==: Color
+        RED: 255
+        BLUE: 255
+        GREEN: 255
+  - ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: §dСтартовый набор
+      lore:
+      - §3Вещь 4Soul
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+      color:
+        ==: Color
+        RED: 0
+        BLUE: 0
+        GREEN: 255
+SPECTATOR:
+  inv:
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  armor:
+  - null
+  - null
+  - null
+  - null

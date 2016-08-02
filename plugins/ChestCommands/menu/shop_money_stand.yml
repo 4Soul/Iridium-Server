@@ -1,0 +1,156 @@
+menu-settings:
+
+  name: '&8Торговец'
+
+  rows: 6
+
+
+block_1:
+  COMMAND: 'console: give {player} 370 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_stand.yml'
+  PRICE: 20
+  NAME: '&7Слеза гаста: 1 шт.'
+  LORE:
+    - '&7Цена: &620 &7$'
+  ID: '370, 1'
+  POSITION-X: 1
+  POSITION-Y: 1
+
+
+block_2:
+  COMMAND: 'console: give {player} 373 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_stand.yml'
+  PRICE: 05
+  NAME: '&7Пузырёк воды: 1 шт.'
+  LORE:
+    - '&7Цена: &605 &7$'
+  ID: '373, 1'
+  POSITION-X: 2
+  POSITION-Y: 1
+
+
+block_3:
+  COMMAND: 'console: give {player} 376 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_stand.yml'
+  PRICE: 10
+  NAME: '&7Маринованыый паучий глаз: 1 шт.'
+  LORE:
+    - '&7Цена: &610 &7$'
+  ID: '376, 1'
+  POSITION-X: 3
+  POSITION-Y: 1
+
+
+block_4:
+  COMMAND: 'console: give {player} 377 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_stand.yml'
+  PRICE: 10
+  NAME: '&7Огненный порошок: 1 шт.'
+  LORE:
+    - '&7Цена: &610 &7$'
+  ID: '377, 1'
+  POSITION-X: 4
+  POSITION-Y: 1
+
+
+block_5:
+  COMMAND: 'console: give {player} 378 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_stand.yml'
+  PRICE: 15
+  NAME: '&7Сгусток магмы: 1 шт.'
+  LORE:
+    - '&7Цена: &615 &7$'
+  ID: '378, 1'
+  POSITION-X: 5
+  POSITION-Y: 1
+
+
+block_6:
+  COMMAND: 'console: give {player} 379 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_stand.yml'
+  PRICE: 01.00
+  NAME: '&7Варочная стойка: 1 шт.'
+  LORE:
+    - '&7Цена: &61.00 &7$'
+  ID: '379, 1'
+  POSITION-X: 6
+  POSITION-Y: 1
+
+
+block_7:
+  COMMAND: 'console: give {player} 380 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_stand.yml'
+  PRICE: 01.00
+  NAME: '&7Котёл: 1 шт.'
+  LORE:
+    - '&7Цена: &61.00 &7$'
+  ID: '380, 1'
+  POSITION-X: 7
+  POSITION-Y: 1
+
+
+block_8:
+  COMMAND: 'console: give {player} 382 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_stand.yml'
+  PRICE: 10
+  NAME: '&7Сверкающий арбуз: 1 шт.'
+  LORE:
+    - '&7Цена: &610 &7$'
+  ID: '382, 1'
+  POSITION-X: 8
+  POSITION-Y: 1
+
+
+block_9:
+  COMMAND: 'console: give {player} 396 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_stand.yml'
+  PRICE: 10
+  NAME: '&7Золотая морковь: 1 шт.'
+  LORE:
+    - '&7Цена: &610 &7$'
+  ID: '396, 1'
+  POSITION-X: 9
+  POSITION-Y: 1
+
+
+block_10:
+  COMMAND: 'console: give {player} 414 1; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_stand.yml'
+  PRICE: 05
+  NAME: '&7Кроличья лапка: 1 шт.'
+  LORE:
+    - '&7Цена: &605 &7$'
+  ID: '414, 1'
+  POSITION-X: 1
+  POSITION-Y: 2
+
+
+block_11:
+  COMMAND: 'console: give {player} 289 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_stand.yml'
+  PRICE: 15
+  NAME: '&7Синее знамя: 8 шт.'
+  LORE:
+    - '&7Цена: &615 &7$'
+  ID: '289, 8'
+  POSITION-X: 2
+  POSITION-Y: 2
+
+
+block_12:
+  COMMAND: 'console: give {player} 348 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_stand.yml'
+  PRICE: 20
+  NAME: '&7Светящаяся пыль: 8 шт.'
+  LORE:
+    - '&7Цена: &620 &7$'
+  ID: '348, 8'
+  POSITION-X: 3
+  POSITION-Y: 2
+
+
+block_13:
+  COMMAND: 'console: give {player} 372 8; sound: ENTITY_EXPERIENCE_BOTTLE_THROW, 3.0, 3.0; open:shop_money_stand.yml'
+  PRICE: 25
+  NAME: '&7Адский нарост: 8 шт.'
+  LORE:
+    - '&7Цена: &625 &7$'
+  ID: '372, 8'
+  POSITION-X: 4
+  POSITION-Y: 2
+
+
+back:
+  COMMAND: 'open:shop.yml; sound: ENTITY_ARROW_SHOOT, 3.0, 3.0'
+  NAME: '&aВернуться...'
+  ID: 381
+  POSITION-X: 5
+  POSITION-Y: 6

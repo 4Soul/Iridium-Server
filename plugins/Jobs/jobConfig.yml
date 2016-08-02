@@ -1,0 +1,1220 @@
+# Jobs configuration.
+#
+# Stores information about each job.
+#
+# NOTE: When having multiple jobs, both jobs will give the income payout to the player
+# even if they give the pay for one action (make the configurations with this in mind)
+# and each job will get the respective experience.
+#
+# e.g If player has 2 jobs where job1 gives 10 income and experience for killing a player 
+# and job2 gives 5 income and experience for killing a player. When the user kills a player
+# they will get 15 income and job1 will gain 10 experience and job2 will gain 5 experience.
+
+Jobs:
+  # must be one word. This job will be ignored as this is just example of all posible actions
+  exampleJob:
+    # full name of the job (displayed when browsing a job, used when joining and leaving)
+    # also can be used as a prefix for the user's name if the option is enabled.
+    # Shown as a prefix only when the user has 1 job.
+    #
+    # NOTE: Must be 1 word
+    fullname: Дровосек
+    # Shortened version of the name of the job. Used as a prefix when the user has more 
+    # than 1 job
+    shortname: W
+    description: Зарабатывает деньги при рубке и посадке дерева
+    # The colour of the name, for a full list of supported colours, go to the message config.
+    ChatColour: GREEN
+    # Option to let you choose what kind of prefix this job adds to your name.
+    # options are: full, title, job, shortfull, shorttitle, shortjob and none
+    chat-display: full
+    # [OPTIONAL] - the maximum level of this class
+    max-level: 10
+    # [OPTIONAL] - the maximum level of this class with specific permission
+    # use jobs.[jobsname].vipmaxlevel
+    vip-max-level: 20
+    # [OPTIONAL] - the maximum number of users on the server that can have this job at 
+    # any one time (includes offline players).
+    slots: 1
+    # Equation used for calculating how much experience is needed to go to the next level.
+    # Available parameters:
+    #   numjobs - the number of jobs the player has
+    #   joblevel - the level the player has attained in the job.
+    # NOTE: Please take care of the brackets when modifying this equation.
+    leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
+    # Equation used for calculating how much income is given per action for the job level.
+    # Available parameters:
+    #   baseincome - the income for the action at level 1 (as set in the configuration).
+    #   joblevel - the level the player has attained in the job.
+    # NOTE: Please take care of the brackets when modifying this equation.
+    income-progression-equation: baseincome*((1.05)^(joblevel-1))
+     # Equation used for calculating how much experience is given per action for the job level.
+    # Available parameters:
+    #   baseexperience - the experience for the action at level 1 (as set in the configuration).
+    #   joblevel - the level the player has attained in the job.
+    # NOTE: Please take care of the brackets when modifying this equation.
+    experience-progression-equation: baseexperience*((1.05)^(joblevel-1))
+    # GUI icon information when using GUI function
+    Gui:
+    # id of block
+      Id: 17
+    # data of block, usualy its 0, but in example Diorite will have id of 1 and data of 3
+      Data: 2
+    ########################################################################
+    # Section used to configure what items the job gets paid for, how much
+    # they get paid and how much experience they gain.
+    #
+    # For break and place, the block name or id is used.
+    # You can select a sub-type by using a '-' between the id and the bit
+    # value for the sub-type. e.g LOG-0 = usual log, LOG-2 = birch log
+    # 17-2 = birch log.
+    #
+    # If no sub-type is give, the payout will be for all sub-types.
+    #
+    # To get a list of all available block types, check the
+    # bukkit JavaDocs for a complete list of block types
+    # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+    # 
+    # For kill tags (Kill and custom-kill), the name is the name of the
+    # mob.
+    # Available mobs:
+    #   Bat
+    #   Blaze
+    #   Cave_spider
+    #   Chicken
+    #   Cow
+    #   Creeper
+    #   Ender_dragon
+    #   Enderman
+    #   Endermite
+    #   Ghast
+    #   Giant
+    #   Guardian
+    #   Horse
+    #   Iron_golem
+    #   Magma_cube
+    #   Mushroom_cow
+    #   Ocelot
+    #   Pig
+    #   Player
+    #   Rabbit
+    #   Sheep
+    #   Silverfish
+    #   Skeleton
+    #   Slime
+    #   Snowman
+    #   Spider
+    #   Squid
+    #   Villager
+    #   Witch
+    #   Wither
+    #   Wolf
+    #   Zombie   
+    #
+    # NOTE: mob names are case sensitive.
+    #
+    # For custom-kill, it is the name of the job (also case sensitive).
+    # 
+    # NOTE: If a job has both the pay for killing a player and for killing a
+    # specific class, they will get both payments.
+    ########################################################################
+    # payment for breaking a block
+    Break:
+      LOG:
+        income: 0.05
+        experience: 0.05
+        experience: -2.0
+      WOOD:
+        income: -0.5
+        experience: -0.5
+    Place:
+      SAPLING:
+        income: 0.01
+        experience: 0.01
+      WOOD:
+        income: 0.1
+        experience: 0.1
+    Tame:
+      Wolf:
+        income: 1.0
+        experience: 1.0
+    # Breeding animals
+    Breed:
+      Wolf:
+        income: 1.0
+        experience: 1.0
+    # Eating food
+    Eat:
+      cooked_rabbit:
+        income: 0.05
+        experience: 0.05
+      baked_potato:
+        income: 0.05
+        experience: 0.05    
+    # Milking cows, only one option is available
+    Milk:
+      Cow:
+        income: 0.05
+        experience: 0.05
+      Mushroomcow:
+        income: 0.05
+        experience: 0.05
+    # Shear sheeps by its color
+    Shear:
+      Black:
+        income: 0.05
+        experience: 0.05
+      Blue:
+        income: 0.05
+        experience: 0.05
+      Brown:
+        income: 0.05
+        experience: 0.05
+      Cyan:
+        income: 0.05
+        experience: 0.05
+      Gray:
+        income: 0.05
+        experience: 0.05
+      Green:
+        income: 0.05
+        experience: 0.05
+      Light_blue:
+        income: 0.05
+        experience: 0.05
+      Lime:
+        income: 0.05
+        experience: 0.05
+      Magenta:
+        income: 0.05
+        experience: 0.05
+      Orange:
+        income: 0.05
+        experience: 0.05
+      Pink:
+        income: 0.05
+        experience: 0.05
+      Purple:
+        income: 0.05
+        experience: 0.05
+      Red:
+        income: 0.05
+        experience: 0.05
+      Silver:
+        income: 0.05
+        experience: 0.05
+      White:
+        income: 0.05
+        experience: 0.05
+      Yellow:
+        income: 0.05
+        experience: 0.05
+    # dyeing armor
+    Dye:    
+      LEATHER_BOOTS:
+        income: 0.05
+        experience: 0.05
+      LEATHER_CHESTPLATE:
+        income: 0.05
+        experience: 0.05
+      LEATHER_HELMET:
+        income: 0.05
+        experience: 0.05
+      LEATHER_LEGGINGS:
+        income: 0.05
+        experience: 0.05
+      351:
+        income: 0.05
+        experience: 0.05
+    # Catching fish
+    Fish:
+      '349':
+        income: 2.0
+        experience: 2.0
+    # Repairing items
+    Repair:
+      WOOD_SWORD:
+        income: 0.05
+        experience: 0.05
+      IRON_SWORD:
+        income: 0.05
+        experience: 0.05
+    # Crafting items
+    Craft:
+      WOOD_SWORD:
+        income: 0.05
+        experience: 0.05
+      LEATHER_BOOTS:
+        income: 0.05
+        experience: 0.05
+    # Smelting ores
+    Smelt:
+      IRON_INGOT:
+        income: 0.03
+        experience: 0.03
+      GOLD_INGOT:
+        income: 0.03
+        experience: 0.03
+    # Enchanting items
+    Enchant:
+      # You can set item for which player will get money
+      WOOD_SWORD:
+        income: 0.05
+        experience: 0.05
+      LEATHER_BOOTS:
+        income: 0.05
+        experience: 0.05
+      # Or/and you can give money for each enchantment they got
+      DIG_SPEED-1:
+        income: 0.05
+        experience: 0.05
+      DIG_SPEED-2:
+        income: 0.05
+        experience: 0.05
+    # Brewing potions
+    Brew:
+      NETHER_STALK:
+        income: 0.05
+        experience: 0.05
+      REDSTONE:
+        income: 0.05
+        experience: 0.05
+    # Explore options. Each number represents players number in exploring that chunk
+    # 1 means that player is first in this chunk, 2 is second and so on, so you can give money not only for first player ho discovers that chunk
+    Explore:
+      1:
+        income: 5.0
+        experience: 5.0
+      2:
+        income: 2.5
+        experience: 2.5
+      3:
+        income: 1.0
+        experience: 1.0
+      4:
+        income: 0.5
+        experience: 0.5
+      5:
+        income: 0.1
+        experience: 0.1
+    # permissions granted for joining class
+    permissions:
+      # example node
+      aaaaaatest.node:
+        # true to give, false to revoke
+        value: true
+        # minimum level needed to grant permission.  Use 0 for all levels
+        level: 0
+      aaaaaatest.node2:
+        value: true
+        # Permission granted when reaching level 10
+        level: 10
+    # Permissions granted when perticular conditions are meet
+    conditions:
+      # Condition mane, irelevent, you can write anything in here
+      first:
+        requires:
+        # j marks that player should have particular jobs level and higher
+        - j:Miner-50
+        - j:Digger-50
+        # p marks permission requirement
+        - p:essentials.notnoob
+        perform:
+        # p marks permission, player will get if given true value, if used false, permission will be taken
+        - p:essentials.fly-true        
+    # Commands executed when player reached level
+    commands:
+      # command name, just to have better idea what this do
+      fly:
+        # Command its self, this will be executed from console, so all commands should work
+        # Possible variables are: [player] [jobname] [oldlevel] [newlevel]
+        command: manuaddp [player] essentials.fly
+        # When to execute this command first time
+        levelFrom: 100
+        # Until when to do this command
+        # This can be set to same level as levelFrom, so this command will be executed only once
+        levelUntil: 100
+      kit:
+        command: manuaddp [player] essentials.kits.woodcutter
+        levelFrom: 150
+        levelUntil: 150
+    # Getting more money when equiped with specific weapon/tool ar wearing armor
+    items:
+      # Just name, dont have any impact
+      firstOne:
+        # Tool/Weapon id. Works for block Break, Fish, Animal tame, Breed, Monster/Player kill.
+        id: 278
+        # Items name, should be with color codes
+        name: '&8Miner Pickaxe'
+        # Item lore, again should come with color codes
+        lore:
+        - '&eBobs pick'
+        - '&710% bonus XP'
+        # Item enchantments, all enchantment names can be found https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html
+        enchants:
+        - DAMAGE_ALL=1
+        - FIRE_ASPECT=1
+        # Money boost: 1.1 is equals 10% more income when 0.9 is equals 10% less from base income
+        moneyBoost: 1.1
+        # Exp boost
+        expBoost: 1.1
+      helmet:
+        # Armor id. This one works with all jobs
+        id: 310
+        name: '&8Armor'
+        lore:
+        - '&eBobs armor'
+        - '&710% bonus XP'
+        moneyBoost: 1.1
+        expBoost: 1.1
+    # Limit item use to jobs level
+    limitedItems:
+      # Just name, dont have any impact
+      firstOne:
+        # Tool/Weapon id. Works for any interact action.
+        id: 278
+        # Level of this job player can start using this item
+        level: 5
+        # (optional) Items name, option to use color codes
+        name: '&8Miner Pickaxe'
+        # (optional) Item lore, again can come with color codes
+        lore:
+        - '&eBobs pick'
+        - '&710% bonus XP'
+        # (optional) Item enchantments, all enchantment names can be found https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html
+        # enchant level can inrease with jobs level to give best RPG experiance
+        enchants:
+        - DAMAGE_ALL=1
+        - FIRE_ASPECT=1
+    cmd-on-join:
+    - 'msg [name] Thx for joining this job!'
+    - 'msg [name] Now start working and get money from [jobname] job!'
+    cmd-on-leave:
+    - 'msg [name] You have left this awesome [jobname] job'
+    - 'msg [name] See you soon!'
+# from this point you can edit jobs by your liking, rename, remove or add new ones
+  Дровосек:
+    fullname: Дровосек
+    shortname: W
+    description: Зарабатывает деньги при рубке и посадке дерева
+    ChatColour: GREEN
+    chat-display: full
+    leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
+    income-progression-equation: baseincome*((1.05)^(joblevel-1))
+    experience-progression-equation: baseexperience*((1.05)^(joblevel-1))
+    Gui:
+      Id: 17
+      Data: 2
+    Break:
+      LOG:
+        income: 0.03
+        experience: 0.03
+      WOOD:
+        income: 0.5
+        experience: 0.5
+    Place:
+      SAPLING:
+        income: 0.005
+        experience: 0.005
+      WOOD:
+        income: 0.1
+        experience: 0.1
+    Kill:
+      Player:
+        income: 3.5
+        experience: 3.5
+  Шахтёр:
+    fullname: Шахтёр
+    shortname: M
+    description: Зарабатывает деньги копая
+    ChatColour: DARK_GRAY
+    chat-display: full
+    leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
+    income-progression-equation: baseincome*((1.05)^(joblevel-1))
+    experience-progression-equation: baseexperience*((1.05)^(joblevel-1))
+    Gui:
+      Id: 257
+      Data: 0
+    Break:
+      STONE:
+        income: 0.06
+        experience: 0.06
+      COAL_ORE:
+        income: 0.1
+        experience: 0.1
+      GLOWING_REDSTONE_ORE:
+        income: 0.1
+        experience: 0.1
+      IRON_ORE:
+        income: 0.1
+        experience: 0.1
+      GOLD_ORE:
+        income: 0.1
+        experience: 0.1
+      LAPIS_ORE:
+        income: 0.1
+        experience: 0.1
+      DIAMOND_ORE:
+        income: 0.3
+        experience: 0.3
+      OBSIDIAN:
+        income: 0.1
+        experience: 0.1
+      MOSSY_COBBLESTONE:
+        income: 0.1
+        experience: 0.1
+      RAILS:
+        income: 0.05
+        experience: 0.05
+    Place:
+      IRON_ORE:
+        income: -0.5
+        experience: -0.5
+      GOLD_ORE:
+        income: -0.5
+        experience: -0.5
+      COAL_ORE:
+        income: -0.5
+        experience: -0.5
+      GLOWING_REDSTONE_ORE:
+        income: -0.5
+        experience: -0.5
+      LAPIS_ORE:
+        income: -0.5
+        experience: -0.5
+      DIAMOND_ORE:
+        income: -0.5
+        experience: -0.5
+      OBSIDIAN:
+        income: -0.5
+        experience: -0.5
+      MOSSY_COBBLESTONE:
+        income: -0.5
+        experience: -0.5
+  Строитель:
+    fullname: Строитель
+    shortname: B
+    description: Зарабатывет деньги строя постройки
+    ChatColour: WHITE
+    chat-display: full
+    leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
+    income-progression-equation: baseincome*((1.05)^(joblevel-1))
+    experience-progression-equation: baseexperience*((1.05)^(joblevel-1))
+    Gui:
+      Id: 5
+      Data: 0
+    Place:
+      COBBLESTONE:
+        income: 0.07
+        experience: 0.07
+      WOOD:
+        income: 0.07
+        experience: 0.07
+      FENCE:
+        income: 0.07
+        experience: 0.07
+      WOOL:
+        income: 0.07
+        experience: 0.07
+      STONE:
+        income: 0.07
+        experience: 0.07
+      GLOWSTONE:
+        income: 0.07
+        experience: 0.07
+      SANDSTONE:
+        income: 0.07
+        experience: 0.07
+      GLASS:
+        income: 0.07
+        experience: 0.07
+      BRICK:
+        income: 0.07
+        experience: 0.07
+      LAPIS_BLOCK:
+        income: 0.07
+        experience: 0.07
+      DOUBLE_STEP:
+        income: 0.07
+        experience: 0.07
+      STEP:
+        income: 0.07
+        experience: 0.07
+      BOOKSHELF:
+        income: 0.07
+        experience: 0.07
+      WOOD_STAIRS:
+        income: 0.07
+        experience: 0.07
+      COBBLESTONE_STAIRS:
+        income: 0.07
+        experience: 0.07
+      MOSSY_COBBLESTONE:
+        income: 0.07
+        experience: 0.07
+      DIAMOND_BLOCK:
+        income: 0.07
+        experience: 0.07
+      GOLD_BLOCK:
+        income: 0.07
+        experience: 0.07
+  Тераформер:
+    fullname: Тераформер
+    shortname: Тераформер
+    description: Зарабатывает деньги равняя землю
+    ChatColour: GOLD
+    chat-display: full
+    leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
+    income-progression-equation: baseincome*((1.05)^(joblevel-1))
+    experience-progression-equation: baseexperience*((1.05)^(joblevel-1))
+    Gui:
+      Id: 256
+      Data: 0
+    Break:
+      DIRT:
+        income: 0.02
+        experience: 0.02
+      GRASS:
+        income: 0.03
+        experience: 0.03
+      GRAVEL:
+        income: 0.04
+        experience: 0.04
+      SAND:
+        income: 0.02
+        experience: 0.02
+      CLAY:
+        income: 0.02
+        experience: 0.02
+  Фермер:
+    fullname: Фермер
+    shortname: Fa
+    description: Зарабатывает деньги за земледелие
+    ChatColour: BLUE
+    chat-display: full
+    leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
+    income-progression-equation: baseincome*((1.05)^(joblevel-1))
+    experience-progression-equation: baseexperience*((1.05)^(joblevel-1))
+    Gui:
+      Id: 296
+      Data: 0
+    Break:
+      CROPS-7:
+        income: 0.07
+        experience: 0.07
+      SUGAR_CANE_BLOCK:
+        income: 0.02
+        experience: 0.02
+    Place:
+      CROPS-0:
+        income: 0.1
+        experience: 0.1
+    Milk:
+      Cow:
+        income: 0.07
+        experience: 0.07
+    Shear:
+      White:
+        income: 0.07
+        experience: 0.07
+      Brown:
+        income: 0.07
+        experience: 0.07
+      Black:
+        income: 0.07
+        experience: 0.07
+      Orange:
+        income: 0.07
+        experience: 0.07
+      Magenta:
+        income: 0.07
+        experience: 0.07
+      LightBlue:
+        income: 0.07
+        experience: 0.07
+      Yellow:
+        income: 0.07
+        experience: 0.07
+      Lime:
+        income: 0.07
+        experience: 0.07
+      Pink:
+        income: 0.07
+        experience: 0.07
+      Gray:
+        income: 0.07
+        experience: 0.07
+      Silver:
+        income: 0.07
+        experience: 0.07
+      Cyan:
+        income: 0.07
+        experience: 0.07
+      Purple:
+        income: 0.07
+        experience: 0.07
+      Blue:
+        income: 0.07
+        experience: 0.07
+      Green:
+        income: 0.07
+        experience: 0.07
+      Red:
+        income: 0.07
+        experience: 0.07
+  Охотник:
+    fullname: Охотник
+    shortname: H
+    description: Зарабатывает деньги убивая мобов и животных.
+    ChatColour: RED
+    chat-display: full
+    leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
+    income-progression-equation: baseincome*((1.05)^(joblevel-1))
+    experience-progression-equation: baseexperience*((1.05)^(joblevel-1))
+    Gui:
+      Id: 267
+      Data: 0
+    Kill:
+      54-1:
+        income: 0.2
+        experience: 0.2
+      68-1:
+        income: 0.2
+        experience: 0.2
+      51-1:
+        income: 0.2
+        experience: 0.2
+      Giant:
+        income: 2.0
+        experience: 2.0
+      Slime:
+        income: 0.2
+        experience: 0.2
+      PigZombie:
+        income: 0.2
+        experience: 0.2
+      Enderman:
+        income: 0.2
+        experience: 0.2
+      CaveSpider:
+        income: 0.2
+        experience: 0.2
+      SilverFish:
+        income: 0.2
+        experience: 0.2
+      Blaze:
+        income: 0.2
+        experience: 0.2
+      LavaSlime:
+        income: 0.2
+        experience: 0.2
+      EnderDragon:
+        income: 5.0
+        experience: 5.0
+      WitherBoss:
+        income: 5.0
+        experience: 5.0
+      Bat:
+        income: 0.2
+        experience: 0.2
+      Witch:
+        income: 0.2
+        experience: 0.2
+      Endermite:
+        income: 0.2
+        experience: 0.2
+      Guardian:
+        income: 0.2
+        experience: 0.2
+      Squid:
+        income: 0.2
+        experience: 0.2
+      MushroomCow:
+        income: 0.2
+        experience: 0.2
+      SnowMan:
+        income: 0.2
+        experience: 0.2
+      Ozelot:
+        income: 0.2
+        experience: 0.2
+      VillagerGolem:
+        income: 0.2
+        experience: 0.2
+      Horse:
+        income: 0.2
+        experience: 0.2
+      101:
+        income: 0.2
+        experience: 0.2
+      Villager:
+        income: 0.2
+        experience: 0.2
+      Chicken:
+        income: 0.2
+        experience: 0.2
+      Cow:
+        income: 0.2
+        experience: 0.2
+      Pig:
+        income: 0.2
+        experience: 0.2
+      Sheep:
+        income: 0.2
+        experience: 0.2
+      Wolf:
+        income: 0.2
+        experience: 0.2
+      Creeper:
+        income: 0.2
+        experience: 0.2
+      Skeleton:
+        income: 0.2
+        experience: 0.2
+      Spider:
+        income: 0.2
+        experience: 0.2
+      Zombie:
+        income: 0.2
+        experience: 0.2
+      Player:
+        income: 3.5
+        experience: 3.5
+  Рыбак:
+    fullname: Рыбак
+    shortname: Рыбак
+    description: Зарабатывает ловя рыбу.
+    ChatColour: AQUA
+    chat-display: full
+    #max-level: 10
+    #slots: 10
+    leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
+    income-progression-equation: baseincome*((1.05)^(joblevel-1))
+    experience-progression-equation: baseexperience*((1.05)^(joblevel-1))
+    Gui:
+      Id: 346
+      Data: 0
+    Fish:
+      RAW_FISH:
+        income: 0.6
+        experience: 0.6
+  Оружейник:
+    fullname: Оружейник
+    shortname: Оружейник
+    description: Зарабатывает деньги крафтом и починкой предметов.
+    ChatColour: DARK_PURPLE
+    chat-display: full
+    leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
+    income-progression-equation: baseincome*((1.05)^(joblevel-1))
+    experience-progression-equation: baseexperience*((1.05)^(joblevel-1))
+    Gui:
+      Id: 145
+      Data: 1
+    Craft:
+      WOOD_SWORD:
+        income: 0.1
+        experience: 0.1
+      IRON_SWORD:
+        income: 0.05
+        experience: 0.05
+      GOLD_SWORD:
+        income: 0.05
+        experience: 0.05
+      DIAMOND_SWORD:
+        income: 0.03
+        experience: 0.03
+    Repair:
+      WOOD_SWORD:
+        income: 0.1
+        experience: 0.1
+      IRON_SWORD:
+        income: 0.15
+        experience: 0.15
+      GOLD_SWORD:
+        income: 0.25
+        experience: 0.25
+      DIAMOND_SWORD:
+        income: 0.3
+        experience: 0.3
+    Smelt:
+      IRON_INGOT:
+        income: 0.05
+        experience: 0.05
+      GOLD_INGOT:
+        income: 0.05
+        experience: 0.05
+  Зельевар:
+    fullname: Зельевар
+    shortname: Зельевар
+    description: Зарабатывает деньги делая зелья.
+    ChatColour: LIGHT_PURPLE
+    chat-display: full
+    leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
+    income-progression-equation: baseincome*((1.05)^(joblevel-1))
+    experience-progression-equation: baseexperience*((1.05)^(joblevel-1))
+    Gui:
+      Id: 379
+      Data: 0
+    Brew:
+      NETHER_STALK:
+        income: 0.25
+        experience: 0.25
+      REDSTONE:
+        income: 0.25
+        experience: 0.25
+      GLOWSTONE_DUST:
+        income: 0.25
+        experience: 0.25
+      SPIDER_EYE:
+        income: 0.25
+        experience: 0.25
+      FERMENTED_SPIDER_EYE:
+        income: 0.25
+        experience: 0.25
+      BLAZE_POWDER:
+        income: 0.25
+        experience: 0.25
+      SUGAR:
+        income: 0.25
+        experience: 0.25
+      SPECKLED_MELON:
+        income: 0.25
+        experience: 0.25
+      MAGMA_CREAM:
+        income: 0.25
+        experience: 0.25
+      GHAST_TEAR:
+        income: 0.25
+        experience: 0.25
+  Чародей:
+    fullname: Чародей
+    shortname: Чародей
+    description: Зарабатывает деньги чаруя оружее.
+    ChatColour: DARK_BLUE
+    chat-display: full
+    leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
+    income-progression-equation: baseincome*((1.05)^(joblevel-1))
+    experience-progression-equation: baseexperience*((1.05)^(joblevel-1))
+    Gui:
+      Id: 116
+      Data: 2
+    Enchant:
+      WOOD_SWORD:
+        income: 0.07
+        experience: 0.07
+      LEATHER_BOOTS:
+        income: 0.07
+        experience: 0.07
+      LEATHER_CHESTPLATE:
+        income: 0.07
+        experience: 0.07
+      LEATHER_HELMET:
+        income: 0.07
+        experience: 0.07
+      LEATHER_LEGGINGS:
+        income: 0.07
+        experience: 0.07
+      IRON_SWORD:
+        income: 0.07
+        experience: 0.07
+      IRON_BOOTS:
+        income: 0.07
+        experience: 0.07
+      IRON_CHESTPLATE:
+        income: 0.07
+        experience: 0.07
+      IRON_HELMET:
+        income: 0.07
+        experience: 0.07
+      IRON_LEGGINGS:
+        income: 0.07
+        experience: 0.07
+      GOLD_SWORD:
+        income: 0.07
+        experience: 0.07
+      GOLD_BOOTS:
+        income: 0.07
+        experience: 0.07
+      GOLD_CHESTPLATE:
+        income: 0.07
+        experience: 0.07
+      GOLD_HELMET:
+        income: 0.07
+        experience: 0.07
+      GOLD_LEGGINGS:
+        income: 0.07
+        experience: 0.07
+      DIAMOND_SWORD:
+        income: 0.07
+        experience: 0.07
+      DIAMOND_SPADE:
+        income: 0.07
+        experience: 0.07
+      DIAMOND_PICKAXE:
+        income: 0.07
+        experience: 0.07
+      DIAMOND_AXE:
+        income: 0.07
+        experience: 0.07
+      DIAMOND_HELMET:
+        income: 0.07
+        experience: 0.07
+      DIAMOND_CHESTPLATE:
+        income: 0.07
+        experience: 0.07
+      DIAMOND_LEGGINGS:
+        income: 0.07
+        experience: 0.07
+      DIAMOND_BOOTS:
+        income: 0.07
+        experience: 0.07
+      ARROW_DAMAGE-1:
+        income: 0.07
+        experience: 0.07
+      ARROW_DAMAGE-2:
+        income: 0.07
+        experience: 0.07
+      ARROW_DAMAGE-3:
+        income: 0.07
+        experience: 0.07
+      ARROW_DAMAGE-4:
+        income: 0.07
+        experience: 0.07
+      ARROW_DAMAGE-5:
+        income: 0.07
+        experience: 0.07
+      ARROW_FIRE:
+        income: 0.07
+        experience: 0.07
+      ARROW_INFINITE:
+        income: 0.07
+        experience: 0.07
+      ARROW_KNOCKBACK-1:
+        income: 0.07
+        experience: 0.07
+      ARROW_KNOCKBACK-2:
+        income: 0.07
+        experience: 0.07
+      DAMAGE_ALL-1:
+        income: 0.07
+        experience: 0.07
+      DAMAGE_ALL-2:
+        income: 0.07
+        experience: 0.07
+      DAMAGE_ALL-3:
+        income: 0.07
+        experience: 0.07
+      DAMAGE_ALL-4:
+        income: 0.07
+        experience: 0.07
+      DAMAGE_ALL-5:
+        income: 0.07
+        experience: 0.07
+      DAMAGE_ARTHROPODS-1:
+        income: 0.07
+        experience: 0.07
+      DAMAGE_ARTHROPODS-2:
+        income: 0.07
+        experience: 0.07
+      DAMAGE_ARTHROPODS-3:
+        income: 0.07
+        experience: 0.07
+      DAMAGE_ARTHROPODS-4:
+        income: 0.07
+        experience: 0.07
+      DAMAGE_ARTHROPODS-5:
+        income: 0.07
+        experience: 0.07
+      DAMAGE_UNDEAD-1:
+        income: 0.07
+        experience: 0.07
+      DAMAGE_UNDEAD-2:
+        income: 0.07
+        experience: 0.07
+      DAMAGE_UNDEAD-3:
+        income: 0.07
+        experience: 0.07
+      DAMAGE_UNDEAD-4:
+        income: 0.07
+        experience: 0.07
+      DAMAGE_UNDEAD-5:
+        income: 0.07
+        experience: 0.07
+      DEPTH_STRIDER-1:
+        income: 0.07
+        experience: 0.07
+      DEPTH_STRIDER-2:
+        income: 0.07
+        experience: 0.07
+      DEPTH_STRIDER-3:
+        income: 0.07
+        experience: 0.07
+      DIG_SPEED-1:
+        income: 0.07
+        experience: 0.07
+      DIG_SPEED-2:
+        income: 0.07
+        experience: 0.07
+      DIG_SPEED-3:
+        income: 0.07
+        experience: 0.07
+      DIG_SPEED-4:
+        income: 0.07
+        experience: 0.07
+      DIG_SPEED-5:
+        income: 0.07
+        experience: 0.07
+      DURABILITY-1:
+        income: 0.07
+        experience: 0.07
+      DURABILITY-2:
+        income: 0.07
+        experience: 0.07
+      DURABILITY-3:
+        income: 0.07
+        experience: 0.07
+      FIRE_ASPECT-1:
+        income: 0.07
+        experience: 0.07
+      FIRE_ASPECT-2:
+        income: 0.07
+        experience: 0.07
+      KNOCKBACK-1:
+        income: 0.07
+        experience: 0.07
+      KNOCKBACK-2:
+        income: 0.07
+        experience: 0.07
+      LOOT_BONUS_BLOCKS-1:
+        income: 0.07
+        experience: 0.07
+      LOOT_BONUS_BLOCKS-2:
+        income: 0.07
+        experience: 0.07
+      LOOT_BONUS_BLOCKS-3:
+        income: 0.07
+        experience: 0.07
+      LOOT_BONUS_MOBS-1:
+        income: 0.07
+        experience: 0.07
+      LOOT_BONUS_MOBS-2:
+        income: 0.07
+        experience: 0.07
+      LOOT_BONUS_MOBS-3:
+        income: 0.07
+        experience: 0.07
+      LUCK-1:
+        income: 0.07
+        experience: 0.07
+      LUCK-2:
+        income: 0.07
+        experience: 0.07
+      LUCK-3:
+        income: 0.07
+        experience: 0.07
+      LURE-1:
+        income: 0.07
+        experience: 0.07
+      LURE-2:
+        income: 0.07
+        experience: 0.07
+      LURE-3:
+        income: 0.07
+        experience: 0.07
+      OXYGEN-1:
+        income: 0.07
+        experience: 0.07
+      OXYGEN-2:
+        income: 0.07
+        experience: 0.07
+      OXYGEN-3:
+        income: 0.07
+        experience: 0.07
+      PROTECTION_ENVIRONMENTAL-1:
+        income: 0.07
+        experience: 0.07
+      PROTECTION_ENVIRONMENTAL-2:
+        income: 0.07
+        experience: 0.07
+      PROTECTION_ENVIRONMENTAL-3:
+        income: 0.07
+        experience: 0.07
+      PROTECTION_ENVIRONMENTAL-4:
+        income: 0.07
+        experience: 0.07
+      PROTECTION_EXPLOSIONS-1:
+        income: 0.07
+        experience: 0.07
+      PROTECTION_EXPLOSIONS-2:
+        income: 0.07
+        experience: 0.07
+      PROTECTION_EXPLOSIONS-3:
+        income: 0.07
+        experience: 0.07
+      PROTECTION_EXPLOSIONS-4:
+        income: 0.07
+        experience: 0.07
+      PROTECTION_FALL-1:
+        income: 0.07
+        experience: 0.07
+      PROTECTION_FALL-2:
+        income: 0.07
+        experience: 0.07
+      PROTECTION_FALL-3:
+        income: 0.07
+        experience: 0.07
+      PROTECTION_FALL-4:
+        income: 0.07
+        experience: 0.07
+      PROTECTION_FIRE-1:
+        income: 0.07
+        experience: 0.07
+      PROTECTION_FIRE-2:
+        income: 0.07
+        experience: 0.07
+      PROTECTION_FIRE-3:
+        income: 0.07
+        experience: 0.07
+      PROTECTION_FIRE-4:
+        income: 0.07
+        experience: 0.07
+      PROTECTION_PROJECTILE-1:
+        income: 0.07
+        experience: 0.07
+      PROTECTION_PROJECTILE-2:
+        income: 0.07
+        experience: 0.07
+      PROTECTION_PROJECTILE-3:
+        income: 0.07
+        experience: 0.07
+      PROTECTION_PROJECTILE-4:
+        income: 0.07
+        experience: 0.07
+      SILK_TOUCH:
+        income: 0.07
+        experience: 0.07
+      THORNS-1:
+        income: 0.07
+        experience: 0.07
+      THORNS-2:
+        income: 0.07
+        experience: 0.07
+      THORNS-3:
+        income: 0.07
+        experience: 0.07
+      WATER_WORKER:
+        income: 0.07
+        experience: 0.07
+  None:
+    fullname: None
+    shortname: N
+    ChatColour: WHITE
+    chat-display: none
+    #max-level: 10
+    #slots: 10
+    leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
+    income-progression-equation: baseincome*((1.05)^(joblevel-1))
+    experience-progression-equation: baseexperience*((1.05)^(joblevel-1))
+    Kill:
+      Player:
+        income: 7.5

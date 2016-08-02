@@ -1,0 +1,15 @@
+broadcast:
+  pre: '&7Сохраняем карту...'
+  post: '&7Сохранение завершено'
+broadcastbackup:
+  pre: '&4Внимание! Сейчас начнётся бекап карты! Могут быть временные подлагивания!'
+  post: '&4Бекап карты завершён!'
+broadcastpurge:
+  pre: '&8(&cASW&8) &9Purging'
+  post: '&8(&cASW&8) &9Complete'
+autorestart:
+  restarting: '&a&lСервер рестарт!!!'
+  countdown: '&a&lРестарт через {SECONDS}'
+worldregen:
+  kickmessage: '&8(&cASW&8) &9Server is regenerating map, please come back later'
+insufficentpermissions: '&8(&cASW&8) &cYou do not have access to that command.'

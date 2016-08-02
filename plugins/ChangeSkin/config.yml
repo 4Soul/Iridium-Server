@@ -1,0 +1,90 @@
+# ChangeSkin config
+
+# Here you can specify default skins for player who do not have a skin
+# The entries from this list will be selected in random order
+#
+# Lists are created like this:
+#default-skins:
+#    - 0aaa2c13-922a-411b-b655-9b8c08404695
+#    - 069a79f4-44e9-4726-a5be-fca90e38aaf5
+#
+# If this list is empty no skin will be selected
+default-skins: []
+
+# If the player does not have a skin and hasn't chosen one with /setskin
+# this will try to redownload using the username of the player
+restoreSkins: true
+
+# Should the skins apply instantly without relogins
+# The player will be invisible for a shorten time
+instantSkinChange: true
+
+# Should the plugin check for skin specific permissions nodes like
+# changeskin.skin.whitelist.uuid
+# changeskin.skin.whitelist.* allows all skins
+#
+# The plugin checks only if the player has one of these and will not check all of them
+# Examples:
+#   Whitelist:
+#       Give the players the permission changeskin.skin.whitelist.uuid
+#       or changeskin.skin.whitelist.* for all skins
+#
+#   Blacklist:
+#       Give your players this permission changeskin.skin.whitelist.*
+#       and a negative (- before the permission) permission: '-changeskin.skin.whitelist.uuid'
+#       |-> This means all skins are allowed except the ones with the uuid in the blacklist list
+skinPermission: false
+
+# A number in seconds which the player have to wait before changing the skin again
+cooldown: 30
+
+# How many requests should be established until the plugin uses the third-party API us.mcapi.com
+# Once this number is reached in a range of ten minutes it will start connecting to us.mcapi.com for the next ten minutes
+# This option exists in order to workaround the rate-limiting. Name -> UUID are fetched in the same way like heads
+mojang-request-limit: 600
+# In order to use a skin, the player name have to be resolve to the UUID and then have to be downloaded using the UUID.
+# Both requests are rate-limited. The first request is 600 requests per 10 minutes. The second one is rate-limited with
+# one request per indivual skin per minute. So unlike the name resolve there cannot be two requests for the
+# same skin within one minute.
+#
+# This might conflict with some heads plugins. Due this stricter rate-limiting this feature is added.
+# The option above is for name resolving while this is only for skin downloading.
+#
+# This feature makes use of https://mcapi.de/. If you actively use this feature, please support the author.
+independent-skin-downloading: false
+
+# Only relevant for BungeeCord
+# Here you can ignore certain servers in order to make use of lazy loading -> load the player data only
+# if they are on the allowed servers
+#
+# This can be used against bot attacks
+# If this is empty, nothing will be ignored
+server-blacklist: []
+# Lists are created like this:
+#server-blacklist:
+#    - pvp
+#    - lobby
+
+# If you have a BungeeCord server, this option might be relevant for you.
+# If you activate this option, the permission will be checked on the bukkit server and only on the bukkit server.
+#
+# This requires to install the plugin on the bukkit server too in order to send the response to the bungeecord server
+#
+# You still have to give the users the permission on the BungeeCord server in order to execute the command, but the bukkit
+# server will verify if the user has the permissions on the backend server too.
+bukkit-permissions: false
+
+# Database configuration
+storage:
+# Single file SQLite database
+    driver: org.sqlite.JDBC
+    # File location
+    database: '{pluginDir}/ChangeSkin.db'
+
+# MySQL
+#    driver: com.mysql.jdbc.Driver
+#    host: localhost
+#    port: 3306
+#    database: ChangeSkin
+#    username: myUser
+#    password: myPassword

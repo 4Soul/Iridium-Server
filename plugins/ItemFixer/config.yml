@@ -1,0 +1,24 @@
+#список нбт тегов для проверки.
+nbt:
+  #ЧУВСТВИТЕЛЬНЫЙ К РЕГИСТРУ.
+  - Items
+  - ActiveEffects
+  - Command
+  - CustomName
+  - AttributeModifiers
+  - Unbreakable
+  - CustomPotionEffects
+spawneggs:
+  - Fuse
+  - CustomName
+  - powered
+  - ActiveEffects
+  - ExplosionPower
+armorstand:
+  - EntityTag
+writenbook:
+  - ClickEvent
+  - run_command
+inventory:
+#Chest, Dropper, TrappedChest, Dispenser
+  - BlockEntityTag

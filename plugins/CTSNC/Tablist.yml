@@ -1,0 +1,15 @@
+CTSNC:
+  TABLIST:
+    Enabled: true
+    Normal:
+      Enabled: true
+      Header: '[NL] &f[&cIRIDIUM&f] [NL]'
+      Footer: '[NL] &fНаш IP &6→ &ciridium-mc.ga &8&l| &fАвто-донат &6→ &chttp://iridium-mc.ga
+        [NL]'
+    Animated:
+      Enabled: false
+      Header: '&c[&eCTSNC&c] &8| &aWorks fine&e! &cWith the new &6Animations&c!'
+      Footer: '&2Example &eNetwork &8| &cJoin Now on a &cNetwork &awith &eCTSNC&c!'
+      MaxLenght: 28
+      SpaceBetweenStartAndEnd: 4
+      AnimationSpeed(InTicks): 5

@@ -1,0 +1,113 @@
+# This is the main configuration file for Spigot.
+# As you can see, there's tons to configure. Some options may impact gameplay, so use
+# with caution, and make sure you know what each option does before configuring.
+# For a reference for any variable inside this file, check out the Spigot wiki at
+# http://www.spigotmc.org/wiki/spigot-configuration/
+# 
+# If you need help with the configuration or have any questions related to Spigot,
+# join us at the IRC or drop by our forums and leave a post.
+# 
+# IRC: #spigot @ irc.spi.gt ( http://www.spigotmc.org/pages/irc/ )
+# Forums: http://www.spigotmc.org/
+
+config-version: 8
+settings:
+  debug: false
+  moved-wrongly-threshold: 0.0625
+  moved-too-quickly-multiplier: 10.0
+  filter-creative-items: true
+  save-user-cache-on-stop-only: false
+  player-shuffle: 0
+  netty-threads: 4
+  bungeecord: false
+  user-cache-size: 1000
+  timeout-time: 60
+  restart-on-crash: false
+  restart-script: ./start.sh
+  late-bind: false
+  int-cache-limit: 1024
+  sample-count: 12
+  item-dirty-ticks: 20
+  attribute:
+    maxHealth:
+      max: 2048.0
+    movementSpeed:
+      max: 2048.0
+    attackDamage:
+      max: 2048.0
+commands:
+  silent-commandblock-console: false
+  tab-complete: 0
+  spam-exclusions:
+  - /skill
+  replace-commands:
+  - setblock
+  - summon
+  - testforblock
+  - tellraw
+  log: true
+messages:
+  whitelist: §cНа сервере включен whitelist!
+  unknown-command: §cНеизвестная команда
+  server-full: §cСервер заполнен
+  outdated-client: §cКлиент устарел.
+  outdated-server: §cСервер устарел
+  restart: §cСервер перезапускается
+stats:
+  disable-saving: false
+  forced-stats: {}
+world-settings:
+  default:
+    verbose: false
+    enable-zombie-pigmen-portal-spawns: true
+    wither-spawn-sound-radius: 0
+    hanging-tick-frequency: 100
+    arrow-despawn-rate: 1200
+    view-distance: 4
+    merge-radius:
+      item: 4.0
+      exp: 8.0
+    item-despawn-rate: 6000
+    max-entity-collisions: 1
+    dragon-death-sound-radius: 0
+    seed-village: 10387312
+    seed-feature: 14357617
+    zombie-aggressive-towards-villager: true
+    nerf-spawner-mobs: false
+    save-structure-info: true
+    ticks-per:
+      hopper-transfer: 24
+      hopper-check: 24
+    hopper-amount: 3
+    entity-tracking-range:
+      players: 48
+      animals: 48
+      monsters: 48
+      misc: 32
+      other: 64
+    growth:
+      cactus-modifier: 100
+      cane-modifier: 100
+      melon-modifier: 100
+      mushroom-modifier: 100
+      pumpkin-modifier: 100
+      sapling-modifier: 100
+      wheat-modifier: 100
+      netherwart-modifier: 100
+      vine-modifier: 100
+      cocoa-modifier: 100
+    hunger:
+      walk-exhaustion: 0.2
+      sprint-exhaustion: 0.8
+      combat-exhaustion: 0.3
+      regen-exhaustion: 3.0
+    max-tnt-per-tick: 100
+    max-tick-time:
+      tile: 8
+      entity: 16
+    entity-activation-range:
+      animals: 6
+      monsters: 10
+      misc: 2
+    random-light-updates: false
+    mob-spawn-range: 3

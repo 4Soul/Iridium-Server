@@ -1,0 +1,39 @@
+RandomPort:
+  Config:
+    Version:
+      Number: Displays the current version
+    X:
+      Max: The maximum x coordinate point that players may RandomPort to (the x-max bound)
+      Min: The minimum x coordinate point that players may RandomPort to (the x-min bound)
+    Z:
+      Max: The maximum z coordinate point that players may RandomPort to (the z-max bound)
+      Min: The minimum z coordinate point that players may RandomPort to (the z-min bound)
+    Strike Lightning Effect: if true, a fake lightning strike dealing no damage will strike at the players location following a RandomPort
+    Permissions:
+      Pex: if true, RandomPort will use PEX for permissions. If false, RandomPort will default to OP based permissions
+    PortOnDeath:
+      Activated: Determines if DeathPorting is enabled. This RandomPorts a player upon their death (technically on their respawn)
+      Choose Randomly:
+        Activated: determines if DeathPort uses permissions or random selections. If set to true, all players may randomly DeathPort, and the permission randomport.deathport has no effect. If set to false, DeathPort will only apply to players with the permission randomport.deathport, this will take no effect if PortOnDeath is set to false
+        Odds of ported out of 100: if both PortOnDeath and Randomly Chosen are true, these are the odds out of 100 that the player will RandomPort on death
+    Random Nether Portal Teleports:
+      Activated: determines whether or not a player will RandomPort when using a nether portal entering or exiting the nether
+      Choose Randomly:
+        Activated: determines if NetherPort uses PEX or randomly chooses players. If set to true, all players may randomly NetherPort, and the permission randomport.netherport has no effect. If set to false, NetherPort will only apply to players with the permission randomport.netherport, this has no effect if NetherPort is set to false
+        Odds of ported out of 100: the odds out of 100 that the player will NetherPort on portal use, only matters if NetherPort and randomly chosen are set to true
+    Block Id's to avoid: The block Id's that RandomPort will not allow a player to land from a teleport on, by default they are bedrock, water, flowing water, lava, and flowing lava
+    Cooldown:
+      Activated: Enables a cooldown for all players that do not have the nocooldown permission
+      Length in seconds: How long the cooldown lasts, not applicable if cooldown is false
+  Commands:
+    /rp: randomports the sender if they have permission
+    /randomport: randomports the sender if they have permission
+    /rp <player>: randomports the target if the sender has permission
+    /randomport <player>: randomports the target if the sender has permission
+  Permissions:
+    RandomPort:
+      portself: allows the player to RandomPort themselves
+      portother: allows the player to RandomPort others
+      deathport: allows the player to RandomPort on death, not applicable if using randomly chosen deathports
+      netherport: allows the player to RandomPort on portal use, not applicable if using randomly chosen netherports
+      nocooldown: allows the player to RandomPort without having to wait for a cooldown

@@ -1,0 +1,68 @@
+CTSNC:
+  CUSTOM_TAGS:
+    Enabled: true
+    PermissionBased: true
+    DefaultOP: true
+    OP:
+      Name: '&c&lСозд. &a'
+    Tag1:
+      Permission: prefix.default
+      Name: '&2Игрок: &f'
+    Tag2:
+      Permission: prefix.vip
+      Name: '&e&lVIP &a'
+    Tag3:
+      Permission: prefix.premium
+      Name: '&6&lПремиум &a'
+    Tag4:
+      Permission: prefix.creat
+      Name: '&d&lКреатив &a'
+    Tag5:
+      Permission: prefix.moder
+      Name: '&2&lМодер &a'
+    Tag6:
+      Permission: prefix.admin
+      Name: '&c&lАдмин &a'
+    Tag7:
+      Permission: prefix.glav
+      Name: '&c&lГлав. &a'
+    Tag8:
+      Permission: prefix.glav2
+      Name: '&c&lСозд. &a'
+    Tag9:
+      Permission: prefix.fly
+      Name: '&3&lФлай &a'
+    Tag10:
+      Permission: prefix.creatp
+      Name: '&d&lКреатив+ &a'
+    Tag11:
+      Permission: prefix.bog
+      Name: '&b&lБог &a'
+    Tag12:
+      Permission: YourName.unused5
+      Name: '&c&lСозд. &a'
+    Tag13:
+      Permission: YourName.unused6
+      Name: '&c&lСозд. &a'
+    Tag14:
+      Permission: YourName.unused7
+      Name: '&c&lСозд. &a'
+    Tag15:
+      Permission: YourName.unused8
+      Name: '&c&lСозд. &a'
+    Tag16:
+      Permission: YourName.unused9
+      Name: '&c&lСозд. &a'
+    Tag17:
+      Permission: YourName.unused10
+      Name: '&c&lСозд. &a'
+    Tag18:
+      Permission: YourName.unused11
+      Name: '&c&lСозд. &a'
+    Tag19:
+      Permission: YourName.unused12
+      Name: '&c&lСозд. &a'
+    Tag20:
+      Permission: YourName.unused13
+      Name: '&c&lСозд. &a'
+    TAG_CLEAR!: false

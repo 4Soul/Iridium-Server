@@ -43,13 +43,13 @@ regionprotect:
 autoflags:
   enabled: true
   flags:
-    mob-spawning: DENY
     creeper-explosion: DENY
-    allow-shop: DENY
-    lightning: DENY
+    mob-spawning: DENY
     pvp: DENY
     damage-animals: DENY
     tnt: DENY
+    allow-shop: DENY
+    lightning: DENY
 restrictcommands:
   enabled: true
   commands:
